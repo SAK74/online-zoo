@@ -1,0 +1,80 @@
+body {
+  margin: 0px;
+}
+
+.main-container {
+  width: 1600px;
+  font-family: "Roboto";
+}
+
+.header {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  color: white;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.header span {
+  width: 105px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+.header .first-part {
+  display: inline-flex;
+  align-items: center;
+}
+.header .pet_story {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  width: 82px;
+  height: 52px;
+  font-size: 19px;
+  line-height: 23px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+.header .pet_story img {
+  position: absolute;
+  top: 25px;
+  left: 11px;
+}
+
+.watch-favorite {
+  height: 780px;
+  background-image: url("../../assets/images/Giant Panda.png");
+}
+.watch-favorite button {
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+.watch-favorite button:hover {
+  border-radius: 25px;
+  width: 298px;
+  height: 54px;
+  background: #E47209;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
