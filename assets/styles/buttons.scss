@@ -1,10 +1,12 @@
 @import './backgrounds.scss';
 
-@mixin btn_1($Color) {
+@mixin btn_1($Left: 0px) {
+  position: absolute;
+  left: calc(50% - 298px/2 + $Left);
   border-radius: 25px;
   width: 298px;
   height: 54px;
-  background: $Color;
+  background: $Orange;
   font-size: 15px;
   line-height: 22px;
   font-family: 'Roboto';
@@ -12,4 +14,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffff;
+  &:hover{
+    background: #E47209;
+  }
+  &:active{
+    background: $Green;
+  }
+  &:disabled{
+    background: $Gray;
+  }
 }

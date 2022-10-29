@@ -9,6 +9,10 @@ body{
   width: 1600px;
   font-family: 'Roboto';
 }
+.panda-image{
+  height: 780px;
+  background-image: url("../../assets/images/Giant Panda.png");
+}
 .header{
   position: relative;
   display: inline-flex;
@@ -50,12 +54,33 @@ body{
 }
 
 .watch-favorite{
-  height: 780px;
-  background-image: url("../../assets/images/Giant Panda.png");
-  button{
-    @include btn_1($Orange);
+  .circle {
+    position: absolute;
+    top: 92px;
+    left: 807px;
+    border-radius: 50%;
+    width: 465px;
+    height: 465px;
+    background-image: $Orange;
   }
-  button:hover{
-    @include btn_1($Color: #E47209);
+  .text {
+    position: absolute;
+    top: 166px;
+    left: 880px;
+    width: 500px;
+    height: 400px;
+    font-size: 107px;
+    line-height: 80px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    span {
+      color: $Yellow;
+    }
+  }
+  .btn_1{
+    top: 626px;
+    @include btn_1($Left: 460px);
   }
 }
