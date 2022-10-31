@@ -1,41 +1,36 @@
-.fonts{
-  font-family: "Roboto";
-  letter-spacing: 0em;
-  text-align: left;
-}
 @mixin h2{
-  @extend .fonts;
+  // @extend .fonts;
   font-size: 48px;
-  font-weight: 400;
   line-height: 58px;
+  font-weight: 400;
 }
 @mixin h3{
-  @extend .fonts;
+  // @extend .fonts;
   font-size: 36px;
-  font-weight: 400;
   line-height: 47px;
+  font-weight: 400;
 }
 @mixin subtitle{
-  @extend .fonts;
+  // @extend .fonts;
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
 }
 @mixin btn{
-  @extend .fonts;
+  // @extend .fonts;
   font-size: 16px;
-  font-weight: 500;
   line-height: 22px;
+  font-weight: 500;
 }
 @mixin  body {
-  @extend .fonts;
+  // @extend .fonts;
   font-size: 16px;
-  font-weight: 400;
   line-height: 22px;
+  font-weight: 400;
 }
 @mixin small{
-  @extend .fonts;
+  // @extend .fonts;
   font-size: 15px;
-  font-weight: 300;
   line-height: 18px;
+  font-weight: 300;
 }

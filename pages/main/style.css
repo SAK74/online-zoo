@@ -1,33 +1,37 @@
-.fonts, .testimonials .container .testimonial p, .testimonials .container .testimonial .testim_header .descr, .testimonials .container .testimonial .testim_header .name, .testimonials h3, .pick-a-ffriend .content .icons figure figcaption, .pick-a-ffriend .content .text p, .pick-a-ffriend .content .text h5, .pick-a-ffriend .content .text h4, .pick-a-ffriend .content h3, .pick-a-ffriend .content h2, .pet_story {
-  font-family: "Roboto";
-  letter-spacing: 0em;
-  text-align: left;
-}
-
 body {
   margin: 0px;
 }
 
 .main-container {
   width: 1600px;
+  font-family: "Roboto";
+  text-align: left;
+  letter-spacing: 0em;
 }
 
 .header {
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 80px;
   background: #000;
+  text-align: center;
   color: white;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
 }
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
 .header span {
   width: 105px;
   font-size: 16px;
+  line-height: 22px;
   font-weight: 500;
-  text-align: center;
 }
 .header .first-part {
   display: inline-flex;
@@ -41,10 +45,10 @@ body {
   border: 1px solid;
   width: 82px;
   height: 52px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
   text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 .pet_story img {
   position: absolute;
@@ -53,12 +57,12 @@ body {
 }
 
 .watch-favorite {
+  position: relative;
+  z-index: 0;
+  top: -80px;
+  width: 100%;
   height: 780px;
   background-image: url("../../assets/images/Giant Panda.png");
-  position: relative;
-  width: 100%;
-  top: -80px;
-  z-index: -1;
 }
 .watch-favorite .circle {
   position: absolute;
@@ -77,6 +81,7 @@ body {
   height: 400px;
   font-size: 107px;
   line-height: 80px;
+  font-family: "Roboto";
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -115,16 +120,16 @@ body {
 }
 
 .backstage {
-  background-image: url("../../assets/images/flower_foto.png");
-  height: 605px;
-  background-repeat: no-repeat;
-  background-position: right -29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: -42px;
+  height: 605px;
+  background-image: url("../../assets/images/flower_foto.png");
+  background-position: right -29px;
+  background-repeat: no-repeat;
   grid: auto auto;
   grid-column: auto auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 85px;
 }
 .backstage img {
@@ -135,40 +140,38 @@ body {
   width: 465px;
 }
 .backstage .text h2 {
-  font-weight: 400;
+  margin: 22px 0 0 0;
   font-size: 48px;
   line-height: 58px;
+  font-weight: 400;
 }
 .backstage .text h2 + div {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   margin: 20px 0 54px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 .backstage .text h4 {
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
+  font-weight: 400;
 }
 .backstage .text h4 + p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
   margin: 20px 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 
 .pets {
   margin-top: 80px;
   height: 1103px;
   background-image: url("../../assets/images/palm_foto.png"), url("../../assets/images/strelitzia 1.png");
-  background-repeat: no-repeat;
   background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
 }
 .pets button {
+  top: 2454px;
   position: absolute;
   left: calc(50% - 149px + 0px);
   border-radius: 25px;
@@ -185,7 +188,6 @@ body {
   letter-spacing: 0em;
   color: white;
   border: none;
-  top: 2454px;
 }
 .pets button:hover {
   background: #E47209;
@@ -230,8 +232,8 @@ body {
   padding: 10px;
 }
 .pets .content .cards-container .card > img {
+  transition: all 0.4s linear;
   width: 346px;
-  transition: all 0.5s linear;
 }
 .pets .content .cards-container .card > img:hover {
   transform: scale(1.05);
@@ -240,80 +242,77 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.5s linear;
   -webkit-animation: menu 0.5s linear forwards;
           animation: menu 0.5s linear forwards;
-  transform-origin: top center;
+  transition: all 0.5s linear;
   margin-top: 7px;
+  visibility: hidden;
+  transform-origin: top center;
 }
 .pets .content .cards-container .card .text {
   margin-left: 4px;
 }
 .pets .content .cards-container .card .text h5 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: left;
-  text-transform: uppercase;
   margin: 4px 0 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
 }
 .pets .content .cards-container .card .text div {
   font-size: 15px;
-  font-weight: 300;
   line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
+  font-weight: 300;
 }
 
 .pick-a-ffriend {
-  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%);
-  opacity: 0.9;
   display: flex;
+  opacity: 0.9;
+  background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%);
 }
 .pick-a-ffriend .content {
-  background: #C4C4C4;
-  height: 835px;
-  width: 1160px;
-  border-radius: 20px;
-  margin: 69px auto 100px;
-  opacity: 1;
   flex-direction: column;
+  opacity: 1;
+  margin: 69px auto 100px;
+  border-radius: 20px;
+  width: 1160px;
+  height: 835px;
+  background: #C4C4C4;
 }
 .pick-a-ffriend .content h2 {
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 58px;
-  color: #FE9013;
   text-align: center;
+  color: #FE9013;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
 }
 .pick-a-ffriend .content h3 {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 47px;
-  text-align: center;
   margin: 58px 0 23px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 400;
 }
 .pick-a-ffriend .content .text {
   margin-left: 97px;
 }
 .pick-a-ffriend .content .text h4 {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
   margin: -7px 0 39px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
 }
 .pick-a-ffriend .content .text h5 {
   font-size: 16px;
-  font-weight: 500;
   line-height: 22px;
+  font-weight: 500;
 }
 .pick-a-ffriend .content .text p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  width: 862px;
   margin-top: -18px;
+  width: 862px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 .pick-a-ffriend .content .text a {
   color: inherit;
@@ -326,24 +325,25 @@ body {
   align-items: center;
 }
 .pick-a-ffriend .content .icons figure {
-  width: 168px;
-  height: 168px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   border: 1px solid #FE9013;
+  width: 168px;
+  height: 168px;
   margin-inline: 29px;
 }
 .pick-a-ffriend .content .icons figure figcaption {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
   position: absolute;
   top: calc(100% + 30px);
   left: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
 }
 .pick-a-ffriend button {
+  top: 3397px;
   position: absolute;
   left: calc(50% - 149px + 0px);
   border-radius: 25px;
@@ -360,7 +360,6 @@ body {
   letter-spacing: 0em;
   color: white;
   border: none;
-  top: 3397px;
 }
 .pick-a-ffriend button:hover {
   background: #E47209;
@@ -373,20 +372,20 @@ body {
 }
 
 .testimonials {
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   height: 920px;
   background-image: url("../../assets/images/leav_foto.png");
-  background-repeat: no-repeat;
   background-position: right 645px;
+  background-repeat: no-repeat;
 }
 .testimonials h3 {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 47px;
-  text-align: center;
   margin: 140px auto 48px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 400;
 }
 .testimonials .container {
   display: flex;
@@ -415,21 +414,21 @@ body {
 }
 .testimonials .container .testimonial .testim_header .name {
   font-size: 16px;
-  font-weight: 500;
   line-height: 22px;
+  font-weight: 500;
 }
 .testimonials .container .testimonial .testim_header .descr {
   font-size: 15px;
-  font-weight: 300;
   line-height: 18px;
+  font-weight: 300;
 }
 .testimonials .container .testimonial p {
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 18px;
+  overflow: hidden;
   margin: 8px 0;
   height: 305px;
-  overflow: hidden;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
 }
 .testimonials progress {
   align-self: center;
@@ -438,6 +437,8 @@ body {
   cursor: pointer;
 }
 .testimonials button {
+  bottom: 181px;
+  border-radius: 5px;
   position: absolute;
   left: calc(50% - 149px - 431px);
   border-radius: 25px;
@@ -454,8 +455,6 @@ body {
   letter-spacing: 0em;
   color: white;
   border: none;
-  border-radius: 5px;
-  bottom: 181px;
 }
 .testimonials button:hover {
   background: #E47209;

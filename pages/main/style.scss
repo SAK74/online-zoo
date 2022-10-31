@@ -8,26 +8,29 @@ body{
 }
 .main-container{
   width: 1600px;
-  // font-family: 'Roboto';
+  font-family: "Roboto";
+  text-align: left;
+  letter-spacing: 0em;
 }
-// section{
-//   position: relative;
-//   top: -80px;
-// }
 .header{
+  position: relative;
+  z-index: 1;
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 80px;
   background: #000;
+  text-align: center;
   color: #FFFF;
   backdrop-filter: blur(2px);
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
   span{
     width: 105px;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
+    @include btn;
   }
   .first-part{
     display: inline-flex;
@@ -41,12 +44,8 @@ body{
   border: 1px solid;
   width: 82px;
   height: 52px;
-  // font-size: 19px;
-  // line-height: 23px;
-  // line-height: 23px;
-  // font-weight: 400;
-  @include body;
   text-align: center;
+  @include body;
   img{
     position: absolute;
     top: 25px;
@@ -54,12 +53,12 @@ body{
   }
 }
 .watch-favorite{
+  position: relative;
+  z-index: 0;
+  top: -80px;
+  width: 100%;
   height: 780px;
   background-image: url("../../assets/images/Giant Panda.png");
-  position: relative;
-  width: 100%;
-  top: -80px;
-  z-index: -1;
   .circle {
     position: absolute;
     top: 92px;
@@ -77,6 +76,7 @@ body{
     height: 400px;
     font-size: 107px;
     line-height: 80px;
+    font-family: 'Roboto';
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -91,16 +91,16 @@ body{
   }
 }
 .backstage{
-  background-image: url("../../assets/images/flower_foto.png");
-  height: 605px;
-  background-repeat: no-repeat;
-  background-position: right -29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: -42px;
+  height: 605px;
+  background-image: url("../../assets/images/flower_foto.png");
+  background-position: right -29px;
+  background-repeat: no-repeat;
   grid: auto auto;
   grid-column: auto auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 85px;
   img{
     width: 609px;
@@ -109,30 +109,19 @@ body{
   .text{
     width: 465px;
     h2{
-      font-weight: 400;
-      font-size: 48px;
-      line-height: 58px;
+      margin: 22px 0 0 0;
+      @include h2;
     }
     h2+div{
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 21px;
       margin: 20px 0 54px;
+      @include body;
     }
     h4{
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 29px;
-      letter-spacing: 0em;
-      text-align: left;
+      @include subtitle;
     }
     h4+p{
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 22px;
-      letter-spacing: 0em;
-      text-align: left;
       margin: 20px 0;
+      @include body;
     }
   }
 }
@@ -140,11 +129,11 @@ body{
   margin-top: 80px;
   height: 1103px;
   background-image: url("../../assets/images/palm_foto.png"), url("../../assets/images/strelitzia\ 1.png");
-  background-repeat: no-repeat;
   background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
   button{
-    @include btn_1;
     top: 2454px;
+    @include btn_1;
   }
   .content{
     display: flex;
@@ -163,51 +152,33 @@ body{
       .card{
         border: 1px solid #FE9013;
         border-radius: 5px;
-        // width: 346px;
         padding: 10px;
-        // position: relative;
         &>img{
+          transition: all .4s linear;
           width: 346px;
-          transition: all .5s linear;
           &:hover{
           transform: scale(1.05);
         }
         }
         .content{
-          // display: none;
-          // visibility: hidden;
           display: flex;
-          // width: 100%;
           justify-content: space-between;
           align-items: center;
-          transition: all .5s linear;
           animation: menu .5s linear forwards;
-          transform-origin: top center;
+          transition: all .5s linear;
           margin-top: 7px;
-          // top: 250px;
-          // left: 10px;
-          // width: 95%;
-          // position: absolute;
-          // top: 100%;
-
+          visibility: hidden;
+          transform-origin: top center;
         }
         .text{
           margin-left: 4px;
           h5{
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 22px;
-            letter-spacing: 0em;
-            text-align: left;
-            text-transform: uppercase;
             margin: 4px 0 0;
+            text-transform: uppercase;
+            @include btn;
           }
           div{
-            font-size: 15px;
-            font-weight: 300;
-            line-height: 18px;
-            letter-spacing: 0em;
-            text-align: left;
+            @include small;
           }
         }
       }
@@ -215,43 +186,40 @@ body{
   }
 }
 .pick-a-ffriend{
-  background: $Orange_grad;
-  opacity: .9;
   display: flex;
+  opacity: .9;
+  background: $Orange_grad;
   .content{
-    background: $Frosted_glass-white;
-    height: 835px;
-    width: 1160px;
-    border-radius: 20px;
-    margin: 69px auto 100px;
-    opacity: 1;
-    // display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // text-align: center;
+    opacity: 1;
+    margin: 69px auto 100px;
+    border-radius: 20px;
+    width: 1160px;
+    height: 835px;
+    background: $Frosted_glass-white;
     h2{
-      @include h2;
-      color: #FE9013;
       text-align: center;
+      color: #FE9013;
+      @include h2;
     }
     h3{
-      @include h3;
-      text-align: center;
       margin: 58px 0 23px;
+      text-align: center;
+      @include h3;
     }
     .text{
       margin-left: 97px;
       h4{
-        @include subtitle;
         margin: -7px 0 39px;
+        @include subtitle;
       }
       h5{
         @include btn;
       }
       p{
-        @include body;
-        width: 862px;
         margin-top: -18px;
+        width: 862px;
+        @include body;
       }
       a{
         color: inherit;
@@ -262,45 +230,41 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
-      // &>img{
-      //   width: 69px;
-      //   height: 35px;
-      // }
       figure{
-        width: 168px;
-        height: 168px;
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
         border: 1px solid #FE9013;
+        width: 168px;
+        height: 168px;
         margin-inline: 29px;
         figcaption{
-          @include body;
           position: absolute;
           top: calc(100% + 30px);
           left: 0;
+          @include body;
         }
       }
     }
   }
   button{
-    @include btn_1;
     top: 3397px;
+    @include btn_1;
   }
 }
 .testimonials{
+  position: relative;
   display: flex;
   flex-direction: column;
-  position: relative;
   height: 920px;
   background-image: url("../../assets/images/leav_foto.png");
-  background-repeat: no-repeat;
   background-position: right 645px;
+  background-repeat: no-repeat;
   h3{
-    @include h3;
-    text-align: center;
     margin: 140px auto 48px;
+    text-align: center;
+    @include h3;
   }
   .container{
     display: flex;
@@ -323,10 +287,10 @@ body{
         }
       }
       p{
-        @include small;
+        overflow: hidden;
         margin: 8px 0;
         height: 305px;
-        overflow: hidden;
+        @include small;
       }
     }
   }
@@ -337,9 +301,9 @@ body{
     cursor: pointer;
   }
   button{
-    @include btn_1($Left: -431px);
-    border-radius: 5px;
     bottom: 181px;
+    border-radius: 5px;
+    @include btn_1($Left: -431px);
   }
 }
 footer{
