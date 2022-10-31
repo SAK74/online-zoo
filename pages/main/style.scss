@@ -2,7 +2,7 @@
 @import '../../assets/styles/backgrounds.scss';
 @import '../../assets/styles/buttons.scss';
 @import '../../assets/styles/fonts.scss';
-
+@import '../../assets//styles/testimonial.scss';
 body{
   margin: 0px;
 }
@@ -33,23 +33,24 @@ body{
     display: inline-flex;
     align-items: center;
   }
-  .pet_story{
-        position: relative;
-        display: flex;
-        align-items: center;
-        border: 1px solid;
-        width: 82px;
-        height: 52px;
-        font-size: 19px;
-        line-height: 23px;
-        line-height: 23px;
-        font-weight: 400;
-        text-align: center;
-        img{
-          position: absolute;
-          top: 25px;
-          left: 11px;
-        }
+}
+.pet_story{
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  width: 82px;
+  height: 52px;
+  // font-size: 19px;
+  // line-height: 23px;
+  // line-height: 23px;
+  // font-weight: 400;
+  @include body;
+  text-align: center;
+  img{
+    position: absolute;
+    top: 25px;
+    left: 11px;
   }
 }
 .watch-favorite{
@@ -288,8 +289,62 @@ body{
     top: 3397px;
   }
 }
-
-
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 920px;
+  background-image: url("../../assets/images/leav_foto.png");
+  background-repeat: no-repeat;
+  background-position: right 645px;
+  h3{
+    @include h3;
+    text-align: center;
+    margin: 140px auto 48px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    .testimonial{
+      @include testimonial;
+      .testim_header{
+        display: inline-flex;
+        gap: 10px;
+        img{
+          width: 37px;
+          height: 37px;
+        }
+        .name{
+          @include btn;
+        }
+        .descr{
+          @include small;
+        }
+      }
+      p{
+        @include small;
+        margin: 8px 0;
+        height: 305px;
+        overflow: hidden;
+      }
+    }
+  }
+  progress{
+    align-self: center;
+    margin-top: 17px;
+    width: 596px;
+    cursor: pointer;
+  }
+  button{
+    @include btn_1($Left: -431px);
+    border-radius: 5px;
+    bottom: 181px;
+  }
+}
+footer{
+  background: #000;
+}
 @keyframes menu{
   0% {
     transform: scaleY(0);;

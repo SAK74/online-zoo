@@ -1,0 +1,19 @@
+@import './backgrounds.scss';
+@import './colors.scss';
+
+@mixin testimonial{
+  border-radius: 20px;
+  width: 264px;
+  height: 387px;
+  padding: 2px;
+  background: $Pink_grad;
+  // overflow: hidden;
+  &>*{
+      border-radius: 20px;
+      // width: 100%;
+      // height: 100%;
+      background: $Light_gray;
+      padding: 12px 15px 15px 15px;
+      // overflow: hidden;
+  }
+}

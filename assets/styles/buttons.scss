@@ -7,14 +7,16 @@
   width: 298px;
   height: 54px;
   background: $Orange;
+  cursor: pointer;
+  font-size: 16px;
   line-height: 22px;
   font-family: 'Roboto';
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  color: #ffff;
-  font-size: 16px;
   letter-spacing: 0em;
+  color: #ffff;
+  border: none;
   &:hover{
     background: #E47209;
   }
@@ -25,15 +27,19 @@
     background: $Gray;
   }
 }
+// @mixin rect_btn {
+//   @include btn_1;
+// }
 
 @mixin arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
   width: 62px;
   height: 62px;
   background: $Orange;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
+  cursor: pointer;
   color: #ffffff;
   &:hover{
     background: $Green;

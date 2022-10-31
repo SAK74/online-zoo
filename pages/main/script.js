@@ -27,3 +27,12 @@ function addEventToImg() {
   // }
   // console.log(cards);
 }
+function donateBtn() {
+  document.getElementById("to_donate").addEventListener("click", () => {
+    location.assign("http://127.0.0.1:5500/pages/donate/");
+  });
+}
+function start() {
+  addEventToImg();
+  donateBtn();
+}
