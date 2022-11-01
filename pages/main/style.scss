@@ -5,8 +5,6 @@
 @import '../../assets//styles/testimonial.scss';
 body{
   margin: 0px;
-}
-.main-container{
   width: 1600px;
   font-family: "Roboto";
   text-align: left;
@@ -15,15 +13,21 @@ body{
 .header{
   position: relative;
   z-index: 1;
-  display: inline-flex;
-  justify-content: space-around;
-  align-items: center;
+  display: flex;
   width: 100%;
   height: 80px;
   background: #000;
   text-align: center;
   color: #FFFF;
   backdrop-filter: blur(2px);
+  .wrapper_header{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding-inline: 220px;
+  }
   a{
     text-decoration: none;
     color: inherit;
@@ -32,9 +36,11 @@ body{
     width: 105px;
     @include btn;
   }
-  .first-part{
+  nav{
     display: inline-flex;
     align-items: center;
+    flex-grow: 1;
+    margin-left: 21px;
   }
 }
 .pet_story{
@@ -42,14 +48,18 @@ body{
   display: flex;
   align-items: center;
   border: 1px solid;
-  width: 82px;
-  height: 52px;
-  text-align: center;
-  @include body;
+  width: 80px;
+  height: 50px;
   img{
     position: absolute;
     top: 25px;
     left: 11px;
+  }
+  h1{
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: 400;
+    text-align: center;
   }
 }
 .watch-favorite{
@@ -87,7 +97,7 @@ body{
   }
   .btn_1{
     top: 624px;
-    @include btn_1($Left: 332px);
+    @include round_btn($Left: 332px);
   }
 }
 .backstage{
@@ -133,7 +143,7 @@ body{
   background-repeat: no-repeat;
   button{
     top: 2454px;
-    @include btn_1;
+    @include round_btn;
   }
   .content{
     display: flex;
@@ -250,7 +260,7 @@ body{
   }
   button{
     top: 3397px;
-    @include btn_1;
+    @include round_btn;
   }
 }
 .testimonials{
@@ -303,7 +313,7 @@ body{
   button{
     bottom: 181px;
     border-radius: 5px;
-    @include btn_1($Left: -431px);
+    @include rect_btn($Left: -431px);
   }
 }
 footer{

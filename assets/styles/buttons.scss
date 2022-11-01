@@ -1,9 +1,8 @@
 @import './backgrounds.scss';
 
-@mixin btn_1($Left: 0px) {
+.btn_1 {
   position: absolute;
-  left: calc(50% - 298px/2 + $Left);
-  border-radius: 25px;
+  border: none;
   width: 298px;
   height: 54px;
   background: $Orange;
@@ -16,7 +15,6 @@
   text-transform: uppercase;
   letter-spacing: 0em;
   color: #ffff;
-  border: none;
   &:hover{
     background: #E47209;
   }
@@ -26,6 +24,16 @@
   &:disabled{
     background: $Gray;
   }
+}
+@mixin round_btn($Left: 0){
+  left: calc(50% - 298px/2 + $Left);
+  border-radius: 25px;
+  @extend .btn_1;
+}
+@mixin rect_btn($Left: 0){
+  left: calc(50% - 298px/2 + $Left);
+  border-radius: 5px;
+  @extend .btn_1;
 }
 @mixin arrow {
   display: flex;
