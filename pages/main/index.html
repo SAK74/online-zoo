@@ -156,7 +156,7 @@
                 <figcaption>Your favourite animal gets delicious dish</figcaption>
               </figure>
             </div>
-            <button id="to_donate">Feed a friend now</button>
+            <button class="to_donate">Feed a friend now</button>
           </div>
         </section>
         <section class="testimonials">
@@ -246,26 +246,76 @@
         </section>
       </main>
       <footer>
-        <span>
-          <p class="pet_story">PetStory online
-            <img src="images/bamboo.png" alt="bamboo">
-          </p>
-          <form>
-            <label>
-              <input type="text">
-            </label>
-            <button type="submit">Submit</button>
-          </form>
-          <div class="media">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="wrapper">
+          <div>
+            <a href="../pages/main/" class="pet_story">
+              <p>PetStory online</p>
+              <img src="images/bamboo.png" alt="bamboo">
+            </a>
           </div>
+          <form>
+            <label for="email">
+              Subscribe to our news
+            </label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <button type="submit" id="submit">Submit</button>
+          </form>
+          <button class="to_donate">donate for volunteers</button>
+          <ul class="media">
+            <li>
+              <a class="media_elem" href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                <span class="wrapper_media">
+                  <img src="icons/Facebook.png" alt="facebook">
+                </span>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a class="media_elem" href="https://twitter.com/" target="_blank" rel="noreferrer">
+                <span class="wrapper_media">
+                  <img src="icons/Twitter.png" alt="twitter">
+                </span>
+                <span>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a class="media_elem" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                <span class="wrapper_media">
+                  <img src="icons/Instagram.png" alt="instagram">
+                </span>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a class="media_elem" href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+                <span class="wrapper_media">
+                  <img src="icons/YouTube.png" alt="youtube">
+                </span>
+                <span>YouTube</span>
+              </a>
+            </li>
+          </ul>
           <nav>
+            <ul>
+              <li>
+                  About
+              </li>
+              <li>
+                  Map
+              </li>
+              <li>
+                  Zoos
+              </li>
+              <li>
+                  Contact us
+              </li>
+            </ul>
           </nav>
           <div class="author">
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
           </div>
+        </div>
       </footer>
 </body>
 </html>

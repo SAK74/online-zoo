@@ -5,6 +5,7 @@
 @import '../../assets//styles/testimonial.scss';
 body{
   margin: 0px;
+  box-sizing: border-box;
   width: 1600px;
   font-family: "Roboto";
   text-align: left;
@@ -55,7 +56,7 @@ body{
     top: 25px;
     left: 11px;
   }
-  h1{
+  &>*{
     font-size: 19px;
     line-height: 23px;
     font-weight: 400;
@@ -318,6 +319,98 @@ body{
 }
 footer{
   background: #000;
+  color: #ffffff;
+  @include body;
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .wrapper{
+    display: grid;
+    margin: 0 auto;
+    padding: 40px 220px;
+    grid-template-columns: 310px 480px auto;
+    form{
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 4px;
+      grid-column: 3 / 4;
+      row-gap: 8px;
+      column-gap: 2px;
+      label{
+        width: 100%;
+        @include subtitle;
+      }
+      input{
+        border-radius: 2px;
+        width: 228px;
+        height: 42px;
+        background: inherit;
+        color: inherit;
+        border-color: #F9804B;
+        border-style: solid;
+        @include body;
+        &:focus-visible{
+          border-color: $Green;
+          outline: none;
+        }
+      }
+      button{
+        @include submit_btn;
+      }
+    }
+    .to_donate{
+      position: static;
+      margin-top: 33px;
+      grid-column: 1 /4;
+      @include rect_btn;
+    }
+    .media{
+      margin-top: 41px;
+      &>*{
+        margin: 8px 0;
+      }
+    }
+    .media_elem{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      .wrapper_media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        background: #c4c4c4;
+      }
+    }
+    nav{
+      align-self: end;
+      ul{
+        display: inline-flex;
+        margin-bottom: 23px;
+        margin-left: 89px;
+        gap: 58px;
+      }
+      li{
+        cursor: pointer;
+      }
+    }
+    .author{
+      align-self: end;
+      margin-bottom: 3px;
+      margin-left: 10px;
+      margin-left: 140px;
+      font-size: 16px;
+      line-height: 21px;
+      font-weight: 100;
+    }
+  }
+}
+ul{
+  list-style: none;
+  padding-inline: 0px;
 }
 @keyframes menu{
   0% {

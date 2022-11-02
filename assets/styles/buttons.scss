@@ -49,3 +49,19 @@
     background: $Green;
   }
 }
+@mixin submit_btn{
+  border: 1px solid #D31414;
+  border-radius: 5px;
+  width: 129px;
+  height: 42px;
+  background: $Light_gray;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto;
+  font-family: 'Roboto';
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0em;
+  color: #D31414;
+}

@@ -1,4 +1,4 @@
-.btn_1, .testimonials button, .watch-favorite .testimonials button, .testimonials .watch-favorite button, .pick-a-ffriend button, .watch-favorite .pick-a-ffriend button, .pick-a-ffriend .watch-favorite button, .pets button, .watch-favorite .pets button, .pets .watch-favorite button, .watch-favorite .btn_1 {
+.btn_1, footer .wrapper .to_donate, .testimonials button, .watch-favorite .testimonials button, .testimonials .watch-favorite button, .pick-a-ffriend button, .watch-favorite .pick-a-ffriend button, .pick-a-ffriend .watch-favorite button, .pets button, .watch-favorite .pets button, .pets .watch-favorite button, .watch-favorite .btn_1 {
   position: absolute;
   border: none;
   width: 298px;
@@ -14,18 +14,19 @@
   letter-spacing: 0em;
   color: white;
 }
-.btn_1:hover, .testimonials button:hover, .pick-a-ffriend button:hover, .pets button:hover {
+.btn_1:hover, footer .wrapper .to_donate:hover, .testimonials button:hover, .pick-a-ffriend button:hover, .pets button:hover {
   background: #E47209;
 }
-.btn_1:active, .testimonials button:active, .pick-a-ffriend button:active, .pets button:active {
+.btn_1:active, footer .wrapper .to_donate:active, .testimonials button:active, .pick-a-ffriend button:active, .pets button:active {
   background: #4B9200;
 }
-.btn_1:disabled, .testimonials button:disabled, .pick-a-ffriend button:disabled, .pets button:disabled {
+.btn_1:disabled, footer .wrapper .to_donate:disabled, .testimonials button:disabled, .pick-a-ffriend button:disabled, .pets button:disabled {
   background: #767474;
 }
 
 body {
   margin: 0px;
+  box-sizing: border-box;
   width: 1600px;
   font-family: "Roboto";
   text-align: left;
@@ -82,7 +83,7 @@ body {
   top: 25px;
   left: 11px;
 }
-.pet_story h1 {
+.pet_story > * {
   font-size: 19px;
   line-height: 23px;
   font-weight: 400;
@@ -123,7 +124,7 @@ body {
 .watch-favorite .text span {
   color: #FFEE2E;
 }
-.watch-favorite .btn_1, .watch-favorite .testimonials button, .testimonials .watch-favorite button, .watch-favorite .pick-a-ffriend button, .pick-a-ffriend .watch-favorite button, .watch-favorite .pets button, .pets .watch-favorite button {
+.watch-favorite .btn_1, .watch-favorite footer .wrapper .to_donate, footer .wrapper .watch-favorite .to_donate, .watch-favorite .testimonials button, .testimonials .watch-favorite button, .watch-favorite .pick-a-ffriend button, .pick-a-ffriend .watch-favorite button, .watch-favorite .pets button, .pets .watch-favorite button {
   top: 624px;
   left: calc(50% - 149px + 332px);
   border-radius: 25px;
@@ -409,6 +410,120 @@ body {
 
 footer {
   background: #000;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer .wrapper {
+  display: grid;
+  margin: 0 auto;
+  padding: 40px 220px;
+  grid-template-columns: 310px 480px auto;
+}
+footer .wrapper form {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 4px;
+  grid-column: 3/4;
+  row-gap: 8px;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+footer .wrapper form label {
+  width: 100%;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+}
+footer .wrapper form input {
+  border-radius: 2px;
+  width: 228px;
+  height: 42px;
+  background: inherit;
+  color: inherit;
+  border-color: #F9804B;
+  border-style: solid;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+footer .wrapper form input:focus-visible {
+  border-color: #4B9200;
+  outline: none;
+}
+footer .wrapper form button {
+  border: 1px solid #D31414;
+  border-radius: 5px;
+  width: 129px;
+  height: 42px;
+  background: #F1F3F2;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0em;
+  color: #D31414;
+}
+footer .wrapper .to_donate {
+  position: static;
+  margin-top: 33px;
+  grid-column: 1/4;
+  left: calc(50% - 149px + 0);
+  border-radius: 5px;
+}
+footer .wrapper .media {
+  margin-top: 41px;
+}
+footer .wrapper .media > * {
+  margin: 8px 0;
+}
+footer .wrapper .media_elem {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .wrapper .media_elem .wrapper_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background: #c4c4c4;
+}
+footer .wrapper nav {
+  align-self: end;
+}
+footer .wrapper nav ul {
+  display: inline-flex;
+  margin-bottom: 23px;
+  margin-left: 89px;
+  gap: 58px;
+}
+footer .wrapper nav li {
+  cursor: pointer;
+}
+footer .wrapper .author {
+  align-self: end;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-left: 140px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+  padding-inline: 0px;
 }
 
 @-webkit-keyframes menu {

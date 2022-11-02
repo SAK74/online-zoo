@@ -17,11 +17,30 @@ function addEventToImg() {
   }
 }
 function donateBtn() {
-  document.getElementById("to_donate").addEventListener("click", () => {
-    location.assign("https://sak74.github.io/online-zoo/pages/donate/");
-  });
+  const donateBtns = document.getElementsByClassName("to_donate");
+  for (let i = 0; i < donateBtns.length; i++) {
+    donateBtns[i].addEventListener("click", () => {
+      location.assign("https://sak74.github.io/online-zoo/pages/donate/");
+    });
+  }
+}
+function handleChange({ target: { value } }) {
+  const submBtn = document.getElementById("submit");
+  if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value)) {
+    submBtn.style.color = "#333B41";
+    submBtn.style.borderColor = "#333B41";
+  } else {
+    submBtn.style.color = "#D31414";
+    submBtn.style.borderColor = "#D31414";
+  }
+}
+function validation() {
+  const input = document
+    .getElementById("email")
+    .addEventListener("change", (ev) => handleChange(ev));
 }
 function start() {
   addEventToImg();
   donateBtn();
+  validation();
 }
