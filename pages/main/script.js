@@ -39,8 +39,20 @@ function validation() {
     .getElementById("email")
     .addEventListener("change", (ev) => handleChange(ev));
 }
+function activeLink() {
+  const links = document.getElementsByClassName("first-part")[0].children;
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", ({ target }) => {
+      for (let j = 0; j < links.length; j++) {
+        links[j].classList.remove("active");
+      }
+      target.classList.add("active");
+    });
+  }
+}
 function start() {
   addEventToImg();
   donateBtn();
   validation();
+  activeLink();
 }

@@ -69,6 +69,12 @@ body {
   flex-grow: 1;
   margin-left: 21px;
 }
+.header nav .active {
+  color: orange;
+}
+.header nav span {
+  cursor: pointer;
+}
 
 .pet_story {
   position: relative;
