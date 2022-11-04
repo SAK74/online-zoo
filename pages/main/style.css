@@ -223,14 +223,24 @@ body {
 .pets .content .cards-container .card {
   border: 1px solid #FE9013;
   border-radius: 5px;
-  padding: 10px;
 }
-.pets .content .cards-container .card > img {
+.pets .content .cards-container .card .image-container {
+  overflow: hidden;
+  width: 366px;
+  height: 366px;
+}
+.pets .content .cards-container .card .image-container:hover {
+  background-color: black;
+}
+.pets .content .cards-container .card .image-container img {
   transition: all 0.4s linear;
-  width: 346px;
 }
-.pets .content .cards-container .card > img:hover {
+.pets .content .cards-container .card .image-container img:hover {
+  opacity: 0.5;
   transform: scale(1.05);
+}
+.pets .content .cards-container .card .wrapper {
+  transition: transform 0.4s linear;
 }
 .pets .content .cards-container .card .content {
   display: flex;
@@ -239,12 +249,8 @@ body {
   -webkit-animation: menu 0.5s linear forwards;
           animation: menu 0.5s linear forwards;
   transition: all 0.5s linear;
-  margin-top: 7px;
-  visibility: hidden;
+  padding: 2px 14px 10px;
   transform-origin: top center;
-}
-.pets .content .cards-container .card .text {
-  margin-left: 4px;
 }
 .pets .content .cards-container .card .text h5 {
   margin: 4px 0 0;

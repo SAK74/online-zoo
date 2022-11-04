@@ -169,13 +169,23 @@ body{
       .card{
         border: 1px solid #FE9013;
         border-radius: 5px;
-        padding: 10px;
-        &>img{
-          transition: all .4s linear;
-          width: 346px;
+        .image-container{
+          overflow: hidden;
+          width: 366px;
+          height: 366px;
           &:hover{
-          transform: scale(1.05);
+            background-color: black;
+          }
+          img{
+            transition: all .4s linear;
+            &:hover{
+            opacity: .5;
+            transform: scale(1.05);
+          }
+          }
         }
+        .wrapper{
+          transition: transform .4s linear;
         }
         .content{
           display: flex;
@@ -183,12 +193,10 @@ body{
           align-items: center;
           animation: menu .5s linear forwards;
           transition: all .5s linear;
-          margin-top: 7px;
-          visibility: hidden;
+          padding: 2px 14px 10px;
           transform-origin: top center;
         }
         .text{
-          margin-left: 4px;
           h5{
             margin: 4px 0 0;
             text-transform: uppercase;
