@@ -103,6 +103,9 @@ body {
   width: 100%;
   height: 780px;
   background-image: url("../../assets/images/Giant Panda.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .watch-favorite .circle {
   position: absolute;
@@ -189,7 +192,7 @@ body {
 }
 .pets button {
   top: 2454px;
-  left: calc(50% - 149px + 0);
+  left: calc(50% - 149px + 0px);
   border-radius: 25px;
 }
 .pets .content {
@@ -344,7 +347,7 @@ body {
 }
 .pick-a-ffriend button {
   top: 3397px;
-  left: calc(50% - 149px + 0);
+  left: calc(50% - 149px + 0px);
   border-radius: 25px;
 }
 
@@ -509,7 +512,7 @@ footer .wrapper .to_donate {
   position: static;
   margin-top: 33px;
   grid-column: 1/4;
-  left: calc(50% - 149px + 0);
+  left: calc(50% - 149px + 0px);
   border-radius: 5px;
 }
 footer .wrapper .media {
