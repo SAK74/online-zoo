@@ -25,12 +25,12 @@
     background: $Gray;
   }
 }
-@mixin round_btn($Left: 0){
+@mixin round_btn($Left: 0px){
   left: calc(50% - 298px/2 + $Left);
   border-radius: 25px;
   @extend .btn_1;
 }
-@mixin rect_btn($Left: 0){
+@mixin rect_btn($Left: 0px){
   left: calc(50% - 298px/2 + $Left);
   border-radius: 5px;
   @extend .btn_1;

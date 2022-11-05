@@ -1,0 +1,362 @@
+.btn_1, footer .wrapper .to_donate, .pick-a-feed .content .inside-window button {
+  position: absolute;
+  border: none;
+  width: 298px;
+  height: 54px;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: white;
+}
+.btn_1:hover, footer .wrapper .to_donate:hover, .pick-a-feed .content .inside-window button:hover {
+  background: #E47209;
+}
+.btn_1:active, footer .wrapper .to_donate:active, .pick-a-feed .content .inside-window button:active {
+  background: #4B9200;
+}
+.btn_1:disabled, footer .wrapper .to_donate:disabled, .pick-a-feed .content .inside-window button:disabled {
+  background: #767474;
+}
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  width: 1600px;
+  font-family: "Roboto";
+  text-align: left;
+  letter-spacing: 0em;
+}
+
+.header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  text-align: center;
+  color: white;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.header .wrapper_header {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-inline: 220px;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+.header span {
+  width: 105px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.header nav {
+  display: inline-flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-left: 21px;
+}
+.header nav .active {
+  color: orange;
+}
+.header nav span {
+  cursor: pointer;
+}
+
+.pet_story {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  width: 80px;
+  height: 50px;
+}
+.pet_story img {
+  position: absolute;
+  top: 25px;
+  left: 11px;
+}
+.pet_story > * {
+  font-size: 19px;
+  line-height: 23px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.back-image {
+  width: 100%;
+  height: 390px;
+  background-image: url("../../assets/images/Giant Panda.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pick-a-feed {
+  padding: 0 220px;
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+.pick-a-feed .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pick-a-feed .content h3 {
+  align-self: flex-start;
+  margin-top: 30px;
+  color: #FE9013;
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 400;
+}
+.pick-a-feed .content .text {
+  color: white;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+.pick-a-feed .content .text h3 {
+  margin: 36px 0 0;
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 400;
+}
+.pick-a-feed .content .text p {
+  margin-top: 10px;
+}
+.pick-a-feed .content .inside-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  border-radius: 20px;
+  width: 84%;
+  background: rgba(187, 167, 167, 0.52);
+  padding-inline: 93px;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+}
+.pick-a-feed .content .inside-window h2 {
+  color: #FE9013;
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+}
+.pick-a-feed .content .inside-window p {
+  align-self: flex-start;
+  margin-top: -19px;
+}
+.pick-a-feed .content .inside-window > p:last-child {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  align-self: center;
+}
+.pick-a-feed .content .inside-window .image-box {
+  display: flex;
+  align-items: center;
+}
+.pick-a-feed .content .inside-window .image-box .number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+.pick-a-feed .content .inside-window .image-box .number > div:first-child {
+  font-size: 72px;
+  line-height: 58px;
+  font-family: Roboto;
+  font-weight: 500;
+  text-align: center;
+}
+.pick-a-feed .content .inside-window .progress {
+  width: 100%;
+}
+.pick-a-feed .content .inside-window .progress .bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 27px;
+  padding: 0px 26px;
+  background: #404950;
+}
+.pick-a-feed .content .inside-window .progress .bar::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 13px;
+  width: 94%;
+  height: 2px;
+  background: #72828E;
+}
+.pick-a-feed .content .inside-window .progress .bar > span {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+}
+.pick-a-feed .content .inside-window .progress .bar > span .amount {
+  position: absolute;
+  top: 27px;
+  left: -21px;
+}
+.pick-a-feed .content .inside-window .progress .bar > span .roller {
+  position: absolute;
+  left: -15px;
+}
+.pick-a-feed .content .inside-window form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  width: 268px;
+}
+.pick-a-feed .content .inside-window form input:first-child {
+  width: 100%;
+}
+.pick-a-feed .content .inside-window form input::-webkit-outer-spin-button, .pick-a-feed .content .inside-window form input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+          appearance: none;
+}
+.pick-a-feed .content .inside-window button {
+  position: static;
+  left: calc(50% - 149px + 0);
+  border-radius: 25px;
+}
+
+footer {
+  background: #000;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer .wrapper {
+  display: grid;
+  margin: 0 auto;
+  padding: 40px 220px;
+  grid-template-columns: 310px 480px auto;
+}
+footer .wrapper form {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 4px;
+  grid-column: 3/4;
+  row-gap: 8px;
+  -moz-column-gap: 2px;
+       column-gap: 2px;
+}
+footer .wrapper form label {
+  width: 100%;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+}
+footer .wrapper form input {
+  border-radius: 2px;
+  width: 228px;
+  height: 42px;
+  background: inherit;
+  color: inherit;
+  border-color: #F9804B;
+  border-style: solid;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+footer .wrapper form input:focus-visible {
+  border-color: #4B9200;
+  outline: none;
+}
+footer .wrapper form button {
+  border: 1px solid #D31414;
+  border-radius: 5px;
+  width: 129px;
+  height: 42px;
+  background: #F1F3F2;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0em;
+  color: #D31414;
+}
+footer .wrapper .to_donate {
+  position: static;
+  margin-top: 33px;
+  grid-column: 1/4;
+  left: calc(50% - 149px + 0);
+  border-radius: 5px;
+}
+footer .wrapper .media {
+  margin-top: 41px;
+}
+footer .wrapper .media > * {
+  margin: 8px 0;
+}
+footer .wrapper .media_elem {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+footer .wrapper .media_elem .wrapper_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  background: #c4c4c4;
+}
+footer .wrapper nav {
+  align-self: end;
+}
+footer .wrapper nav ul {
+  display: inline-flex;
+  margin-bottom: 23px;
+  margin-left: 89px;
+  gap: 58px;
+}
+footer .wrapper nav li {
+  cursor: pointer;
+}
+footer .wrapper .author {
+  align-self: end;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  margin-left: 140px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 100;
+}
+footer ul {
+  list-style: none;
+  padding-inline: 0px;
+}/*# sourceMappingURL=style.css.map */
