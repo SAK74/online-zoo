@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="style.css">
   <base href="../../assets/">
+  <script src="../pages/donate/script.js"></script>
   <title>Online zoo</title>
 </head>
-<body>
+<body onload="start();">
   <header class="header">
     <div class="wrapper_header">
       <a href="../pages/main/" class="pet_story">
@@ -17,10 +18,14 @@
         <img src="images/bamboo.png" alt="bamboo">
       </a>
       <nav class="first-part">
-        <span class="active">About</span>
+        <span>
+          <a href="../pages/main/">
+            About
+          </a>
+        </span>
         <span>Map</span>
         <span>Zoos</span>
-        <span>
+        <span class="active">
           <a href="../../../online-zoo/pages/donate/">
             Donate
           </a>
@@ -58,63 +63,68 @@
             <img src="icons/x_icon.png" alt="x-icon">
             <img src="icons/panda_widget1.png" alt="panda-widget">
           </div>
-          <div class="progress">
-            Amount
-            <div class="bar">
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$5000</span>
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$2000</span>
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$1000</span>
-                <img class="roller" src="icons\roller_icon.png" alt="roller-icon">
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$500</span>
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$200</span>
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$100</span>
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$50</span>
-              </span>
-              <span>
-                <img src="icons\Ellipse 7.png" alt="dot">
-                <span class="amount">$25</span>
-              </span>
-            </div>
-            <!-- <img src="images\Rectangle 12.png" alt=""> -->
-            <!-- <img src="images/progress_bar.png" alt="progress"> -->
-            <!-- <div class="amounts">
-              <span class="amount">$5000</span>
-              <span class="amount">$2000</span>
-              <span class="amount">$1000</span>
-              <span class="amount">$500</span>
-              <span class="amount">$250</span>
-              <span class="amount">$100</span>
-              <span class="amount">$50</span>
-              <span class="amount">$25</span>
-            </div> -->
-          </div>
           <form>
-            <input type="number" maxlength="4" id="amount">
-            <!-- <label for="amount" class="adornment">$</label> -->
-            <input type="radio" id="mounthly">
-            <label for="mounthly">Mounthly</label>
-            <input type="radio" id="once">
-            <label for="once">Once</label>
+            <div class="progress">
+              <p>Amount</p>
+              <div class="bar">
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$5000</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$2000</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount" checked>
+                  <span class="amount">$1000</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$500</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$200</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$100</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$50</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+                <label>
+                  <input type="radio" name="amount">
+                  <span class="amount">$25</span>
+                  <img src="icons\Ellipse 7.png" alt="dot">
+                </label>
+              </div>
+            </div>
+            <div class="amount-input">
+              <input type="number" oninput="maxLenght(this);" id="amount" placeholder="Another amount">
+              <span>$</span>
+            </div>
+            <div class="radio" >
+              <label for="mounthly">
+                <input type="radio" id="mounthly" name="often">
+                <span></span>
+                Mounthly
+              </label>
+              <label for="once">
+                <input type="radio" id="once" name="often" checked>
+                Once
+                <span></span>
+              </label>
+            </div>
           </form>
           <button>Feed a friend now</button>
           <p>Share with your friends on social networks </p>
@@ -175,7 +185,9 @@
       <nav>
         <ul>
           <li>
+            <a href="../pages/main/">
               About
+            </a>
           </li>
           <li>
               Map

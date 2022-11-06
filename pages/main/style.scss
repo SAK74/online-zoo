@@ -405,6 +405,9 @@ footer{
       &>*{
         margin: 8px 0;
       }
+      li:hover{
+        transform: translate(5px);
+      }
     }
     .media_elem{
       display: inline-flex;
@@ -430,6 +433,9 @@ footer{
       }
       li{
         cursor: pointer;
+        &:hover{
+          color: orange;
+        }
       }
     }
     .author{
