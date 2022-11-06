@@ -521,6 +521,9 @@ footer .wrapper .media {
 footer .wrapper .media > * {
   margin: 8px 0;
 }
+footer .wrapper .media li:hover {
+  transform: translate(5px);
+}
 footer .wrapper .media_elem {
   display: inline-flex;
   align-items: center;
@@ -546,6 +549,9 @@ footer .wrapper nav ul {
 }
 footer .wrapper nav li {
   cursor: pointer;
+}
+footer .wrapper nav li:hover {
+  color: orange;
 }
 footer .wrapper .author {
   align-self: end;
