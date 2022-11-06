@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
   <link rel="stylesheet" href="style.css">
   <base href="../../assets/">
+  <script src="../pages/donate/script.js"></script>
   <title>Online zoo</title>
 </head>
-<body>
+<body onload="start();">
   <header class="header">
     <div class="wrapper_header">
       <a href="../pages/main/" class="pet_story">
@@ -17,10 +18,14 @@
         <img src="images/bamboo.png" alt="bamboo">
       </a>
       <nav class="first-part">
-        <span class="active">About</span>
+        <span>
+          <a href="../pages/main/">
+            About
+          </a>
+        </span>
         <span>Map</span>
         <span>Zoos</span>
-        <span>
+        <span class="active">
           <a href="../../../online-zoo/pages/donate/">
             Donate
           </a>
@@ -104,15 +109,20 @@
                 </label>
               </div>
             </div>
-            <input type="number" maxlength="4" id="amount" placeholder="Another amount">
+            <div class="amount-input">
+              <input type="number" oninput="maxLenght(this);" id="amount" placeholder="Another amount">
+              <span>$</span>
+            </div>
             <div class="radio" >
               <label for="mounthly">
                 <input type="radio" id="mounthly" name="often">
+                <span></span>
                 Mounthly
               </label>
               <label for="once">
                 <input type="radio" id="once" name="often" checked>
                 Once
+                <span></span>
               </label>
             </div>
           </form>
@@ -134,7 +144,7 @@
         <label for="email">
           Subscribe to our news
         </label>
-        <input type="email" id="email" placeholder="Enter your email">
+        <input type="email" id="email" placeholder="Enter your email" required>
         <button type="submit" id="submit">Submit</button>
       </form>
       <button class="to_donate">donate for volunteers</button>
@@ -175,7 +185,9 @@
       <nav>
         <ul>
           <li>
+            <a href="../pages/main/">
               About
+            </a>
           </li>
           <li>
               Map

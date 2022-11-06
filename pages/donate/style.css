@@ -239,10 +239,6 @@ body {
   top: 40px;
   left: -8px;
 }
-.pick-a-feed .content .inside-window .progress .bar > span .roller, .pick-a-feed .content .inside-window .progress .bar label .roller {
-  position: absolute;
-  left: -15px;
-}
 .pick-a-feed .content .inside-window form {
   display: flex;
   flex-direction: column;
@@ -251,11 +247,23 @@ body {
   margin-top: 67px;
   width: 100%;
 }
+.pick-a-feed .content .inside-window form .amount-input {
+  position: relative;
+}
+.pick-a-feed .content .inside-window form .amount-input span {
+  position: absolute;
+  bottom: 23px;
+  right: 18px;
+  width: 10px;
+  height: 20px;
+  color: #929699;
+}
 .pick-a-feed .content .inside-window form input[type=number] {
   margin-top: 98px;
   border-radius: 2px;
   width: 260px;
   height: 52px;
+  padding-left: 9px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
@@ -275,6 +283,25 @@ body {
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+}
+.pick-a-feed .content .inside-window form .radio label {
+  position: relative;
+}
+.pick-a-feed .content .inside-window form .radio label input {
+  opacity: 0;
+}
+.pick-a-feed .content .inside-window form .radio label input:checked + span {
+  background: orange;
+}
+.pick-a-feed .content .inside-window form .radio label span {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  outline: 2px solid orange;
+  outline-offset: 2px;
 }
 .pick-a-feed .content .inside-window form .radio label:first-child {
   margin-left: 20px;
@@ -369,6 +396,9 @@ footer .wrapper .media {
 footer .wrapper .media > * {
   margin: 8px 0;
 }
+footer .wrapper .media li:hover {
+  transform: translate(5px);
+}
 footer .wrapper .media_elem {
   display: inline-flex;
   align-items: center;
@@ -394,6 +424,9 @@ footer .wrapper nav ul {
 }
 footer .wrapper nav li {
   cursor: pointer;
+}
+footer .wrapper nav li:hover {
+  color: orange;
 }
 footer .wrapper .author {
   align-self: end;
