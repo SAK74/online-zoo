@@ -27,7 +27,6 @@
 body {
   margin: 0px;
   box-sizing: border-box;
-  width: 1600px;
   font-family: "Roboto";
   text-align: left;
   letter-spacing: 0em;
@@ -112,7 +111,7 @@ body {
 .pick-a-feed .content h3 {
   align-self: flex-start;
   margin-top: 45px;
-  color: #FE9013;
+  color: #fe9013;
   font-size: 36px;
   line-height: 47px;
   font-weight: 400;
@@ -147,7 +146,7 @@ body {
   font-weight: 400;
 }
 .pick-a-feed .content .inside-window h2 {
-  color: #FE9013;
+  color: #fe9013;
   font-size: 48px;
   line-height: 58px;
   font-weight: 400;
@@ -209,10 +208,11 @@ body {
   top: 13px;
   width: 94%;
   height: 2px;
-  background: #72828E;
+  background: #72828e;
   margin-inline: 18px;
 }
-.pick-a-feed .content .inside-window .progress .bar > span, .pick-a-feed .content .inside-window .progress .bar label {
+.pick-a-feed .content .inside-window .progress .bar > span,
+.pick-a-feed .content .inside-window .progress .bar label {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -221,20 +221,24 @@ body {
   height: 20px;
   cursor: pointer;
 }
-.pick-a-feed .content .inside-window .progress .bar > span input, .pick-a-feed .content .inside-window .progress .bar label input {
+.pick-a-feed .content .inside-window .progress .bar > span input,
+.pick-a-feed .content .inside-window .progress .bar label input {
   display: none;
 }
-.pick-a-feed .content .inside-window .progress .bar > span input:checked + .amount, .pick-a-feed .content .inside-window .progress .bar label input:checked + .amount {
-  color: #FE9013;
+.pick-a-feed .content .inside-window .progress .bar > span input:checked + .amount,
+.pick-a-feed .content .inside-window .progress .bar label input:checked + .amount {
+  color: #fe9013;
 }
-.pick-a-feed .content .inside-window .progress .bar > span input:checked ~ img, .pick-a-feed .content .inside-window .progress .bar label input:checked ~ img {
-  border: 2px solid #FE9013;
+.pick-a-feed .content .inside-window .progress .bar > span input:checked ~ img,
+.pick-a-feed .content .inside-window .progress .bar label input:checked ~ img {
+  border: 2px solid #fe9013;
   border-radius: 50%;
   padding: 4px;
-  outline: 2px solid #FE9013;
+  outline: 2px solid #fe9013;
   outline-offset: 7px;
 }
-.pick-a-feed .content .inside-window .progress .bar > span .amount, .pick-a-feed .content .inside-window .progress .bar label .amount {
+.pick-a-feed .content .inside-window .progress .bar > span .amount,
+.pick-a-feed .content .inside-window .progress .bar label .amount {
   position: absolute;
   top: 40px;
   left: -8px;
@@ -268,7 +272,8 @@ body {
   line-height: 22px;
   font-weight: 400;
 }
-.pick-a-feed .content .inside-window form input::-webkit-outer-spin-button, .pick-a-feed .content .inside-window form input::-webkit-inner-spin-button {
+.pick-a-feed .content .inside-window form input::-webkit-outer-spin-button,
+.pick-a-feed .content .inside-window form input::-webkit-inner-spin-button {
   margin: 0;
   -webkit-appearance: none;
           appearance: none;
@@ -357,7 +362,7 @@ footer .wrapper form input {
   height: 42px;
   background: inherit;
   color: inherit;
-  border-color: #F9804B;
+  border-color: #f9804b;
   border-style: solid;
   font-size: 16px;
   line-height: 22px;
