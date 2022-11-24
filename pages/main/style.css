@@ -27,7 +27,6 @@
 body {
   margin: 0px;
   box-sizing: border-box;
-  width: 1600px;
   font-family: "Roboto";
   text-align: left;
   letter-spacing: 0em;
@@ -107,15 +106,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.watch-favorite .circle {
-  position: absolute;
-  top: 92px;
-  left: 807px;
-  border-radius: 50%;
-  width: 465px;
-  height: 465px;
-  background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-}
 .watch-favorite .text {
   position: absolute;
   top: 166px;
@@ -132,6 +122,17 @@ body {
 }
 .watch-favorite .text span {
   color: #FFEE2E;
+}
+.watch-favorite .text:before {
+  content: "";
+  position: absolute;
+  top: -75px;
+  left: -75px;
+  z-index: -1;
+  border-radius: 50%;
+  width: 465px;
+  height: 465px;
+  background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 .watch-favorite .btn_1, .watch-favorite footer .wrapper .to_donate, footer .wrapper .watch-favorite .to_donate, .watch-favorite .testimonials button, .testimonials .watch-favorite button, .watch-favorite .pick-a-ffriend button, .pick-a-ffriend .watch-favorite button, .watch-favorite .pets button, .pets .watch-favorite button {
   top: 624px;
@@ -224,7 +225,7 @@ body {
   row-gap: 22px;
 }
 .pets .content .cards-container .card {
-  border: 1px solid #FE9013;
+  border: 1px solid #fe9013;
   border-radius: 5px;
 }
 .pets .content .cards-container .card .image-container {
@@ -284,7 +285,7 @@ body {
 }
 .pick-a-ffriend .content h2 {
   text-align: center;
-  color: #FE9013;
+  color: #fe9013;
   font-size: 48px;
   line-height: 58px;
   font-weight: 400;
@@ -319,8 +320,8 @@ body {
 }
 .pick-a-ffriend .content .text a {
   color: inherit;
-  -webkit-text-decoration-color: #FE9013;
-          text-decoration-color: #FE9013;
+  -webkit-text-decoration-color: #fe9013;
+          text-decoration-color: #fe9013;
 }
 .pick-a-ffriend .content .icons {
   display: flex;
@@ -332,7 +333,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #FE9013;
+  border: 1px solid #fe9013;
   width: 168px;
   height: 168px;
   margin-inline: 29px;
@@ -482,7 +483,7 @@ footer .wrapper form input {
   height: 42px;
   background: inherit;
   color: inherit;
-  border-color: #F9804B;
+  border-color: #f9804b;
   border-style: solid;
   font-size: 16px;
   line-height: 22px;
