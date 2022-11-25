@@ -15,7 +15,7 @@
   color: white;
 }
 .btn_1:hover, footer .wrapper .to_donate:hover, .pick-a-feed .content .inside-window button:hover {
-  background: #E47209;
+  background: #e47209;
 }
 .btn_1:active, footer .wrapper .to_donate:active, .pick-a-feed .content .inside-window button:active {
   background: #4B9200;
@@ -373,7 +373,7 @@ footer .wrapper form input:focus-visible {
   outline: none;
 }
 footer .wrapper form button {
-  border: 1px solid #D31414;
+  border: 1px solid #d31414;
   border-radius: 5px;
   width: 129px;
   height: 42px;
@@ -386,7 +386,7 @@ footer .wrapper form button {
   font-weight: 400;
   text-align: center;
   letter-spacing: 0em;
-  color: #D31414;
+  color: #d31414;
 }
 footer .wrapper .to_donate {
   position: static;

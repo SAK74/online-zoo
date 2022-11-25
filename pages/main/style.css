@@ -15,7 +15,7 @@
   color: white;
 }
 .btn_1:hover, footer .wrapper .to_donate:hover, .testimonials button:hover, .pick-a-ffriend button:hover, .pets button:hover {
-  background: #E47209;
+  background: #e47209;
 }
 .btn_1:active, footer .wrapper .to_donate:active, .testimonials button:active, .pick-a-ffriend button:active, .pets button:active {
   background: #4B9200;
@@ -24,6 +24,11 @@
   background: #767474;
 }
 
+@media screen and (min-width: 1001px) {
+  body {
+    min-width: 1600px;
+  }
+}
 body {
   margin: 0px;
   box-sizing: border-box;
@@ -126,9 +131,9 @@ body {
 .watch-favorite .text:before {
   content: "";
   position: absolute;
+  z-index: -1;
   top: -75px;
   left: -75px;
-  z-index: -1;
   border-radius: 50%;
   width: 465px;
   height: 465px;
@@ -149,8 +154,6 @@ body {
   background-image: url("../../assets/images/flower_foto.png");
   background-position: right -29px;
   background-repeat: no-repeat;
-  grid: auto auto;
-  grid-column: auto auto;
   gap: 85px;
 }
 .backstage img {
@@ -185,14 +188,18 @@ body {
 }
 
 .pets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 80px;
   height: 1103px;
   background-image: url("../../assets/images/palm_foto.png"), url("../../assets/images/strelitzia 1.png");
   background-position: left bottom, right bottom;
   background-repeat: no-repeat;
+  gap: 82px;
 }
 .pets button {
-  top: 2454px;
+  position: static;
   left: calc(50% - 149px + 0px);
   border-radius: 25px;
 }
@@ -238,6 +245,7 @@ body {
 }
 .pets .content .cards-container .card .image-container img {
   transition: all 0.4s linear;
+  width: 100%;
 }
 .pets .content .cards-container .card .image-container img:hover {
   opacity: 0.5;
@@ -270,17 +278,17 @@ body {
 }
 
 .pick-a-ffriend {
-  display: flex;
   opacity: 0.9;
+  padding: 71px 220px 100px;
   background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 .pick-a-ffriend .content {
+  display: flex;
   flex-direction: column;
+  align-items: center;
   opacity: 1;
-  margin: 69px auto 100px;
   border-radius: 20px;
-  width: 1160px;
-  height: 835px;
+  padding-bottom: 58px;
   background: #C4C4C4;
 }
 .pick-a-ffriend .content h2 {
@@ -291,14 +299,14 @@ body {
   font-weight: 400;
 }
 .pick-a-ffriend .content h3 {
-  margin: 58px 0 23px;
+  margin: 42px 0 23px;
   text-align: center;
   font-size: 36px;
   line-height: 47px;
   font-weight: 400;
 }
 .pick-a-ffriend .content .text {
-  margin-left: 97px;
+  margin-left: 42px;
 }
 .pick-a-ffriend .content .text h4 {
   margin: -7px 0 39px;
@@ -347,7 +355,8 @@ body {
   font-weight: 400;
 }
 .pick-a-ffriend button {
-  top: 3397px;
+  position: static;
+  margin-top: 120px;
   left: calc(50% - 149px + 0px);
   border-radius: 25px;
 }
@@ -415,7 +424,6 @@ body {
 .testimonials .progress_wrapper {
   display: inline-flex;
   align-items: center;
-  margin-top: 10px;
   margin-top: 22px;
   border-radius: 5px;
   background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -494,7 +502,7 @@ footer .wrapper form input:focus-visible {
   outline: none;
 }
 footer .wrapper form button {
-  border: 1px solid #D31414;
+  border: 1px solid #d31414;
   border-radius: 5px;
   width: 129px;
   height: 42px;
@@ -507,7 +515,7 @@ footer .wrapper form button {
   font-weight: 400;
   text-align: center;
   letter-spacing: 0em;
-  color: #D31414;
+  color: #d31414;
 }
 footer .wrapper .to_donate {
   position: static;
@@ -560,7 +568,7 @@ footer .wrapper .author {
   margin-left: 10px;
   margin-left: 140px;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 20px;
   font-weight: 100;
 }
 footer ul {
