@@ -93,7 +93,6 @@ body {
     height: 400px;
     font-size: 107px;
     line-height: 80px;
-    font-family: "Roboto";
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -122,13 +121,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -42px;
-  height: 605px;
+  margin-top: 38px;
+  margin-bottom: 158px;
   background-image: url("../../assets/images/flower_foto.png");
   background-position: right -29px;
   background-repeat: no-repeat;
-  // grid: auto auto;
-  // grid-column: auto auto;
   gap: 85px;
   img {
     width: 609px;
@@ -250,8 +247,8 @@ body {
       @include h3;
     }
     .text {
-      // margin-left: 97px;
-      margin-left: 42px;
+      // margin-left: 42px;
+      padding: 0 30px 0 70px;
       h4 {
         margin: -7px 0 39px;
         @include subtitle;
@@ -261,7 +258,8 @@ body {
       }
       p {
         margin-top: -18px;
-        width: 862px;
+        width: 84%;
+        // width: 862px;
         @include body;
       }
       a {

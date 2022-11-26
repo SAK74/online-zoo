@@ -1,0 +1,166 @@
+@media screen and (max-width: 640px) {
+  .header {
+    max-height: 34px;
+    .wrapper_header {
+      padding-inline: 3px;
+    }
+    .pet_story {
+      border: none;
+    }
+    .menu {
+      position: relative;
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+      padding: 7px;
+      background: url("../../assets/icons/burger_menu.png") no-repeat center;
+      cursor: pointer;
+      &:hover {
+        & > * {
+          transform: scaleY(1);
+        }
+      }
+      & > * {
+        position: absolute;
+        top: 100%;
+        left: -80px;
+        display: flex;
+        flex-direction: column;
+        transform: scaleY(0);
+        transition: transform 0.5s;
+        height: 170px;
+        padding: 10px;
+        background: #000;
+        transform-origin: top;
+        nav {
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .watch-favorite {
+    top: -34px;
+    height: 373px;
+    .text {
+      top: 82px;
+      left: 366px;
+      width: 256px;
+      font-size: 54px;
+      line-height: 41px;
+      &::before {
+        top: -36px;
+        left: -36px;
+        width: 237px;
+        height: 237px;
+      }
+    }
+    .btn_1 {
+      top: 280px;
+      left: 22px;
+    }
+  }
+  .pet_story {
+    & > * {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    img {
+      position: absolute;
+      left: 20px;
+      block-size: 15px;
+    }
+  }
+  .backstage {
+    justify-content: left;
+    margin: 15px 0 -50px;
+    padding: 3px 21px;
+    background: url("../../assets/images/flower_foto1.png") no-repeat right -58px;
+    img {
+      display: none;
+    }
+    .text {
+      h2 {
+        margin: 5px 0 22px 0;
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 400;
+        & + div {
+          margin: 0;
+        }
+      }
+      h4 {
+        margin-bottom: 16px;
+        & + p {
+          margin-top: 0px;
+          margin-bottom: 60px;
+          width: 105%;
+        }
+      }
+    }
+  }
+  .pets {
+    gap: 16px;
+    height: 972px;
+    background-size: 130px, 172px;
+    background-image: url("../../assets/images/palm_foto.png"),
+      url("../../assets/images/strelitzia 1.png");
+    .content {
+      position: relative;
+      .arrow {
+        top: 344px;
+        &:first-child {
+          left: 224px;
+        }
+        &:last-child {
+          left: 316px;
+        }
+      }
+      .cards-container {
+        row-gap: 88px;
+        overflow: hidden;
+        height: 800px;
+        grid-template-columns: auto auto;
+        .card {
+          .image-container {
+            width: 285px;
+            height: 285px;
+          }
+          .text {
+            div {
+              font-size: 12px;
+              line-height: 12px;
+            }
+            h5 {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pick-a-ffriend {
+    .content {
+      h2 {
+        font-size: 42px;
+        line-height: 50px;
+      }
+      .text {
+        h4 {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+}

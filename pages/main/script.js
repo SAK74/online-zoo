@@ -52,9 +52,25 @@ function activeLink() {
     });
   }
 }
+
 function start() {
   addEventToImg();
   donateBtn();
   validation();
   activeLink();
+
+  const menuItems = new DocumentFragment();
+  const menuWrapper = document.querySelector(".menu>div");
+  function burgerChange(mm) {
+    menuItems.append(document.querySelector(".first-part"));
+    menuItems.append(document.querySelector(".design"));
+    if (mm.matches) {
+      menuWrapper.appendChild(menuItems);
+    } else {
+      document.querySelector(".wrapper_header").appendChild(menuItems);
+    }
+  }
+  const mmedia = matchMedia("(max-width: 640px)");
+  mmedia.addEventListener("change", burgerChange);
+  burgerChange(mmedia);
 }

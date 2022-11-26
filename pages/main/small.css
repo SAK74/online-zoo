@@ -1,29 +1,3 @@
-.btn_1 {
-  position: absolute;
-  border: none;
-  width: 298px;
-  height: 54px;
-  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 22px;
-  font-family: "Roboto";
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0em;
-  color: white;
-}
-.btn_1:hover {
-  background: #e47209;
-}
-.btn_1:active {
-  background: #4B9200;
-}
-.btn_1:disabled {
-  background: #767474;
-}
-
 @media screen and (max-width: 1000px) {
   .header .wrapper_header {
     width: 100%;
@@ -42,9 +16,6 @@
     height: 320px;
     font-size: 85px;
     line-height: 64px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0em;
   }
   .watch-favorite .text::before {
     top: -51px;
@@ -57,8 +28,7 @@
     left: 567px;
   }
   .backstage {
-    margin-top: -58px;
-    height: 580px;
+    margin: 0 0 120px 0px;
     padding: 0px 30px;
     background: none;
     gap: 32px;
@@ -92,20 +62,14 @@
     width: 294px;
     height: 294px;
   }
-  .pets button {
-    position: static;
-  }
   .pick-a-ffriend {
     padding: 30px 30px 50px;
-  }
-  .pick-a-ffriend .content {
-    padding: 0px 48px 56px;
   }
   .pick-a-ffriend .content h2 {
     margin-block: 30px;
   }
   .pick-a-ffriend .content .text {
-    margin: 0 auto;
+    padding: 0px 48px 56px;
   }
   .pick-a-ffriend .content .text h4 {
     margin-bottom: 0;
@@ -113,8 +77,15 @@
   .pick-a-ffriend .content .text h5 {
     margin-top: 17px;
   }
+  .pick-a-ffriend .content .text p {
+    width: 100%;
+  }
   .pick-a-ffriend .content h3 {
-    margin-top: 24px;
+    margin-top: -34px;
+  }
+  .pick-a-ffriend button {
+    margin-top: 128px;
+    margin-bottom: -7px;
   }
   .testimonials {
     height: 842px;
@@ -137,6 +108,9 @@
   .testimonials .progress_wrapper .slider {
     width: 390px;
   }
+  .testimonials .progress_wrapper .slider::-webkit-slider-thumb {
+    width: 75px;
+  }
   .testimonials button {
     bottom: 140px;
     left: 30px;
@@ -156,7 +130,7 @@
     margin: 0 0px 6px -84px;
   }
 }
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 641px) {
   body {
     width: 1000px;
   }
