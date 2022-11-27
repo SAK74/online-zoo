@@ -1,0 +1,252 @@
+@media screen and (max-width: 640px) {
+  .header {
+    max-height: 34px;
+    .wrapper_header {
+      padding-inline: 3px;
+    }
+    .pet_story {
+      border: none;
+      & > * {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      img {
+        position: absolute;
+        left: 20px;
+        block-size: 15px;
+      }
+    }
+    .menu {
+      position: relative;
+      right: 10px;
+      width: 18px;
+      height: 18px;
+      padding: 7px;
+      background: url("../../assets/icons/burger_menu.png") no-repeat center;
+      cursor: pointer;
+      &:hover {
+        & > * {
+          transform: scaleY(1);
+        }
+      }
+      & > * {
+        position: absolute;
+        top: 100%;
+        left: -80px;
+        display: flex;
+        flex-direction: column;
+        transform: scaleY(0);
+        transition: transform 0.5s;
+        height: 170px;
+        padding: 10px;
+        background: #000;
+        transform-origin: top;
+        nav {
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          margin: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+  .watch-favorite {
+    top: -34px;
+    height: 373px;
+    .text {
+      top: 82px;
+      left: 366px;
+      width: 256px;
+      font-size: 54px;
+      line-height: 41px;
+      &::before {
+        top: -36px;
+        left: -36px;
+        width: 237px;
+        height: 237px;
+      }
+    }
+    .btn_1 {
+      top: 280px;
+      left: 22px;
+    }
+  }
+
+  .backstage {
+    justify-content: left;
+    margin: 15px 0 -50px;
+    padding: 3px 21px;
+    background: url("../../assets/images/flower_foto1.png") no-repeat right -58px;
+    img {
+      display: none;
+    }
+    .text {
+      h2 {
+        margin: 5px 0 22px 0;
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 400;
+        & + div {
+          margin: 0;
+        }
+      }
+      h4 {
+        margin-bottom: 16px;
+        & + p {
+          margin-top: 0px;
+          margin-bottom: 60px;
+          width: 105%;
+        }
+      }
+    }
+  }
+  .pets {
+    height: 972px;
+    background-image: url("../../assets/images/palm_foto.png"),
+      url("../../assets/images/strelitzia 1.png");
+    background-size: 130px, 172px;
+    gap: 16px;
+    .content {
+      position: relative;
+      .arrow {
+        top: 344px;
+        &:first-child {
+          left: 224px;
+        }
+        &:last-child {
+          left: 316px;
+        }
+      }
+      .cards-container {
+        overflow: hidden;
+        height: 800px;
+        row-gap: 88px;
+        grid-template-columns: auto auto;
+        .card {
+          .image-container {
+            width: 285px;
+            height: 285px;
+          }
+          .text {
+            div {
+              font-size: 12px;
+              line-height: 12px;
+            }
+            h5 {
+              font-size: 12px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .pick-a-ffriend {
+    padding: 20px 0 22px;
+    .content {
+      h2 {
+        font-size: 42px;
+        line-height: 50px;
+        margin-block: 10px 28px;
+      }
+      h3 {
+        margin-top: 10px;
+      }
+      .text {
+        padding: 0 5px 0 20px;
+        h4 {
+          font-size: 22px;
+          line-height: 26px;
+        }
+      }
+      .icons {
+        position: relative;
+        figure {
+          top: -18px;
+          left: -6px;
+          margin-inline: 20px;
+        }
+        & > img {
+          position: absolute;
+          top: -18px;
+          right: 182px;
+        }
+        img:first-of-type {
+          left: 152px;
+        }
+      }
+      button {
+        margin: 82px auto 0px;
+      }
+    }
+  }
+  .testimonials {
+    height: 668px;
+    padding: 0 23px 0 20px;
+    h3 {
+      margin: 59px 0 31px;
+    }
+    .container {
+      flex-direction: column;
+      gap: 14px;
+      .testimonial {
+        width: 100%;
+        height: auto;
+        & > * {
+          padding-bottom: 2px;
+        }
+        p {
+          height: 34px;
+        }
+      }
+    }
+    button {
+      top: 532px;
+      left: initial;
+      width: 240px;
+      height: 54px;
+    }
+  }
+  footer {
+    .wrapper {
+      padding: 11px 20px;
+      grid-template-columns: 50% 50%;
+      form {
+        display: none;
+      }
+      .media {
+        margin-top: -16px;
+        grid-area: 1/2/3/3;
+        justify-self: end;
+        li {
+          margin-block: 18px;
+        }
+        .wrapper_media + span {
+          display: none;
+        }
+      }
+      .to_donate {
+        margin-top: -26px;
+        grid-row: 2;
+        grid-column: 1;
+      }
+      nav {
+        ul {
+          margin: 0 0 18px 0px;
+          gap: 37px;
+        }
+      }
+      .author {
+        margin: -8px 0 0px 0;
+        justify-self: end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+}
