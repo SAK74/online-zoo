@@ -79,6 +79,9 @@ body {
 .header nav span {
   cursor: pointer;
 }
+.header nav span:hover {
+  color: orange;
+}
 
 .pet_story {
   position: relative;

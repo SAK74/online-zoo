@@ -7,7 +7,6 @@ function donateBtn() {
   }
 }
 function maxLenght(el) {
-  console.log(el.value);
   if (el.value > 9999) {
     el.value = 9999;
   }
@@ -23,7 +22,24 @@ function activeLink() {
     });
   }
 }
+function handleChange({ target: { value } }) {
+  const submBtn = document.getElementById("submit");
+  if (/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g.test(value)) {
+    console.log("match!");
+    submBtn.style.color = "#333B41";
+    submBtn.style.borderColor = "#333B41";
+  } else {
+    submBtn.style.color = "#D31414";
+    submBtn.style.borderColor = "#D31414";
+  }
+}
+function validation() {
+  const input = document
+    .getElementById("email")
+    .addEventListener("change", (ev) => handleChange(ev));
+}
 function start() {
   activeLink();
   donateBtn();
+  validation();
 }

@@ -12,7 +12,6 @@
 body {
   margin: 0px;
   box-sizing: border-box;
-  // width: 1600px;
   font-family: "Roboto";
   text-align: left;
   letter-spacing: 0em;
@@ -53,6 +52,9 @@ body {
     }
     span {
       cursor: pointer;
+      &:hover {
+        color: orange;
+      }
     }
   }
 }
