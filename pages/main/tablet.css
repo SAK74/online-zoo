@@ -8,9 +8,18 @@
   .header .pet_story {
     border: none;
   }
+  .header .pet_story > * {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header .pet_story img {
+    position: absolute;
+    left: 20px;
+    block-size: 15px;
+  }
   .header .menu {
     position: relative;
-    margin-right: 10px;
+    right: 10px;
     width: 18px;
     height: 18px;
     padding: 7px;
@@ -60,15 +69,6 @@
   .watch-favorite .btn_1 {
     top: 280px;
     left: 22px;
-  }
-  .pet_story > * {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .pet_story img {
-    position: absolute;
-    left: 20px;
-    block-size: 15px;
   }
   .backstage {
     justify-content: left;
@@ -168,6 +168,64 @@
   }
   .pick-a-ffriend .content button {
     margin: 82px auto 0px;
+  }
+  .testimonials {
+    height: 668px;
+    padding: 0 23px 0 20px;
+  }
+  .testimonials h3 {
+    margin: 59px 0 31px;
+  }
+  .testimonials .container {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .testimonials .container .testimonial {
+    width: 100%;
+    height: auto;
+  }
+  .testimonials .container .testimonial > * {
+    padding-bottom: 2px;
+  }
+  .testimonials .container .testimonial p {
+    height: 34px;
+  }
+  .testimonials button {
+    top: 532px;
+    left: initial;
+    width: 240px;
+    height: 54px;
+  }
+  footer .wrapper {
+    padding: 11px 20px;
+    grid-template-columns: 50% 50%;
+  }
+  footer .wrapper form {
+    display: none;
+  }
+  footer .wrapper .media {
+    margin-top: -16px;
+    grid-area: 1/2/3/3;
+    justify-self: end;
+  }
+  footer .wrapper .media li {
+    margin-block: 18px;
+  }
+  footer .wrapper .media .wrapper_media + span {
+    display: none;
+  }
+  footer .wrapper .to_donate {
+    margin-top: -26px;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  footer .wrapper nav ul {
+    margin: 0 0 18px 0px;
+    gap: 37px;
+  }
+  footer .wrapper .author {
+    margin: -8px 0 0px 0;
+    justify-self: end;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 640px) {

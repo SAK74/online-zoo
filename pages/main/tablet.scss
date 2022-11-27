@@ -6,14 +6,23 @@
     }
     .pet_story {
       border: none;
+      & > * {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      img {
+        position: absolute;
+        left: 20px;
+        block-size: 15px;
+      }
     }
     .menu {
       position: relative;
-      margin-right: 10px;
+      right: 10px;
       width: 18px;
       height: 18px;
       padding: 7px;
-      background: url('../../assets/icons/burger_menu.png') no-repeat center;
+      background: url("../../assets/icons/burger_menu.png") no-repeat center;
       cursor: pointer;
       &:hover {
         & > * {
@@ -63,22 +72,12 @@
       left: 22px;
     }
   }
-  .pet_story {
-    & > * {
-      font-size: 12px;
-      line-height: 14px;
-    }
-    img {
-      position: absolute;
-      left: 20px;
-      block-size: 15px;
-    }
-  }
+
   .backstage {
     justify-content: left;
     margin: 15px 0 -50px;
     padding: 3px 21px;
-    background: url('../../assets/images/flower_foto1.png') no-repeat right -58px;
+    background: url("../../assets/images/flower_foto1.png") no-repeat right -58px;
     img {
       display: none;
     }
@@ -104,8 +103,8 @@
   }
   .pets {
     height: 972px;
-    background-image: url('../../assets/images/palm_foto.png'),
-      url('../../assets/images/strelitzia 1.png');
+    background-image: url("../../assets/images/palm_foto.png"),
+      url("../../assets/images/strelitzia 1.png");
     background-size: 130px, 172px;
     gap: 16px;
     .content {
@@ -179,6 +178,68 @@
       }
       button {
         margin: 82px auto 0px;
+      }
+    }
+  }
+  .testimonials {
+    height: 668px;
+    padding: 0 23px 0 20px;
+    h3 {
+      margin: 59px 0 31px;
+    }
+    .container {
+      flex-direction: column;
+      gap: 14px;
+      .testimonial {
+        width: 100%;
+        height: auto;
+        & > * {
+          padding-bottom: 2px;
+        }
+        p {
+          height: 34px;
+        }
+      }
+    }
+    button {
+      top: 532px;
+      left: initial;
+      width: 240px;
+      height: 54px;
+    }
+  }
+  footer {
+    .wrapper {
+      padding: 11px 20px;
+      grid-template-columns: 50% 50%;
+      form {
+        display: none;
+      }
+      .media {
+        margin-top: -16px;
+        grid-area: 1/2/3/3;
+        justify-self: end;
+        li {
+          margin-block: 18px;
+        }
+        .wrapper_media + span {
+          display: none;
+        }
+      }
+      .to_donate {
+        margin-top: -26px;
+        grid-row: 2;
+        grid-column: 1;
+      }
+      nav {
+        ul {
+          margin: 0 0 18px 0px;
+          gap: 37px;
+        }
+      }
+      .author {
+        margin: -8px 0 0px 0;
+        justify-self: end;
       }
     }
   }
