@@ -97,10 +97,10 @@
     width: 105%;
   }
   .pets {
-    gap: 16px;
     height: 972px;
-    background-size: 130px, 172px;
     background-image: url("../../assets/images/palm_foto.png"), url("../../assets/images/strelitzia 1.png");
+    background-size: 130px, 172px;
+    gap: 16px;
   }
   .pets .content {
     position: relative;
@@ -115,9 +115,9 @@
     left: 316px;
   }
   .pets .content .cards-container {
-    row-gap: 88px;
     overflow: hidden;
     height: 800px;
+    row-gap: 88px;
     grid-template-columns: auto auto;
   }
   .pets .content .cards-container .card .image-container {
@@ -132,13 +132,42 @@
     font-size: 12px;
     line-height: 16px;
   }
+  .pick-a-ffriend {
+    padding: 20px 0 22px;
+  }
   .pick-a-ffriend .content h2 {
     font-size: 42px;
     line-height: 50px;
+    margin-block: 10px 28px;
+  }
+  .pick-a-ffriend .content h3 {
+    margin-top: 10px;
+  }
+  .pick-a-ffriend .content .text {
+    padding: 0 5px 0 20px;
   }
   .pick-a-ffriend .content .text h4 {
     font-size: 22px;
     line-height: 26px;
+  }
+  .pick-a-ffriend .content .icons {
+    position: relative;
+  }
+  .pick-a-ffriend .content .icons figure {
+    top: -18px;
+    left: -6px;
+    margin-inline: 20px;
+  }
+  .pick-a-ffriend .content .icons > img {
+    position: absolute;
+    top: -18px;
+    right: 182px;
+  }
+  .pick-a-ffriend .content .icons img:first-of-type {
+    left: 152px;
+  }
+  .pick-a-ffriend .content button {
+    margin: 82px auto 0px;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 640px) {
