@@ -1,0 +1,150 @@
+@media screen and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+  .header {
+    max-height: 34px;
+  }
+  .header .wrapper_header {
+    padding-inline: 3px;
+  }
+  .header .pet_story {
+    border: none;
+  }
+  .header .pet_story > * {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .header .pet_story img {
+    position: absolute;
+    left: 20px;
+    block-size: 15px;
+  }
+  .header .menu {
+    position: relative;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+    padding: 7px;
+    background: url("../../assets/icons/burger_menu.png") no-repeat center;
+    cursor: pointer;
+  }
+  .header .menu:hover > * {
+    transform: scaleY(1);
+  }
+  .header .menu > * {
+    position: absolute;
+    top: 100%;
+    left: -80px;
+    display: flex;
+    flex-direction: column;
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    height: 170px;
+    padding: 10px;
+    background: #000;
+    transform-origin: top;
+  }
+  .header .menu > * nav {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 0;
+    text-align: left;
+  }
+  .back-image {
+    height: 335px;
+    background-position: -256px -182px;
+    background-size: 1340px 700px;
+  }
+  .pick-a-feed {
+    padding: 1px 20px 0;
+  }
+  .pick-a-feed .content {
+    padding-bottom: 44px;
+  }
+  .pick-a-feed .content .text h3 {
+    margin-top: 28px;
+    width: initial;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .pick-a-feed .content .text p {
+    margin-top: 20px;
+  }
+  .pick-a-feed .content h3:not(.text *) {
+    margin-top: 32px;
+  }
+  .pick-a-feed .content .inside-window {
+    margin-top: -7px;
+    padding: 6px 0 24px;
+  }
+  .pick-a-feed .content .inside-window p {
+    margin: -6px 0 12px 0;
+    width: 85%;
+    text-align: center;
+  }
+  .pick-a-feed .content .inside-window form {
+    margin-top: 42px;
+  }
+  .pick-a-feed .content .inside-window form .progress {
+    width: 100%;
+  }
+  .pick-a-feed .content .inside-window form .progress :first-child {
+    position: relative;
+    top: 4px;
+    left: 10px;
+    text-align: left;
+  }
+  .pick-a-feed .content .inside-window form .progress label:nth-of-type(2),
+.pick-a-feed .content .inside-window form .progress label:nth-of-type(3) {
+    display: none;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar {
+    gap: 93px;
+    padding-inline: 23px;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar:before {
+    width: 86%;
+  }
+  .pick-a-feed .content .inside-window form input[type=number] {
+    width: 180px;
+    height: 42px;
+  }
+  footer .wrapper {
+    padding: 11px 20px;
+    grid-template-columns: 50% 50%;
+  }
+  footer .wrapper form {
+    display: none;
+  }
+  footer .wrapper .media {
+    margin-top: -16px;
+    grid-area: 1/2/3/3;
+    justify-self: end;
+  }
+  footer .wrapper .media li {
+    margin-block: 18px;
+  }
+  footer .wrapper .media .wrapper_media + span {
+    display: none;
+  }
+  footer .wrapper .to_donate {
+    margin-top: -26px;
+    grid-row: 2;
+    grid-column: 1;
+  }
+  footer .wrapper nav ul {
+    margin: 0 0 18px 0px;
+    gap: 37px;
+  }
+  footer .wrapper .author {
+    margin: -8px 0 0px 0;
+    justify-self: end;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+}/*# sourceMappingURL=tablet.css.map */

@@ -28,15 +28,14 @@
     margin-top: 30px;
   }
   .pick-a-feed .content .inside-window {
-    padding: 0 0 30px;
     margin-top: 40px;
+    padding: 0 0 30px;
   }
   .pick-a-feed .content .inside-window h2 {
     margin: 22px 0 30px;
   }
   .pick-a-feed .content .inside-window p {
     align-self: initial;
-    margin-top: -19px;
   }
   .pick-a-feed .content .inside-window .progress {
     width: 86%;
