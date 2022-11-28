@@ -1,0 +1,81 @@
+@media screen and (min-width: 1001px) {
+  body {
+    min-width: 1600px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+  .header {
+    .wrapper_header {
+      width: 100%;
+      padding-inline: 30px;
+      nav {
+        span {
+          width: 96px;
+        }
+      }
+    }
+  }
+  .back-image {
+    background-position: -176px;
+    background-size: 1600px 780px;
+  }
+  .pick-a-feed {
+    padding: 4px 30px 30px;
+    .content {
+      .text {
+        h3 {
+          width: 80%;
+        }
+        p {
+          margin-top: 30px;
+        }
+      }
+      .inside-window {
+        padding: 0 0 30px;
+        margin-top: 40px;
+        h2 {
+          margin: 22px 0 30px;
+        }
+        p {
+          align-self: initial;
+          margin-top: -19px;
+        }
+        .progress {
+          width: 86%;
+          label:first-child {
+            display: none;
+          }
+          .bar {
+            gap: 112px;
+          }
+        }
+        button {
+          position: static;
+          margin-top: 30px;
+        }
+        p:last-child {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      padding: 40px 32px;
+      form {
+        margin: 2px 0 0 228px;
+        grid-column: 2/4;
+      }
+      nav ul {
+        margin: 0 0 24px -23px;
+        gap: 49px;
+      }
+      .author {
+        margin: 0 0px 6px -84px;
+      }
+    }
+  }
+}
