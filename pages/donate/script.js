@@ -38,13 +38,36 @@ function validation() {
     .getElementById("email")
     .addEventListener("change", (ev) => handleChange(ev));
 }
+const overlay = document.createElement("div");
+overlay.id = "overlay";
+function openMenu() {
+  document.querySelector(".menu-container").style.transform = "none";
+  document.querySelector(".header").classList.add("opened-menu");
+  document.body.appendChild(overlay);
+}
+function closeMenu() {
+  document.querySelector(".menu-container").style.transform = "scaleY(0)";
+  document.querySelector(".header").classList.remove("opened-menu");
+  document.body.removeChild(document.getElementById("overlay"));
+  document.body.querySelector(".menu").classList.remove("opened-menu");
+}
+overlay.addEventListener("click", closeMenu);
+function menuClickHandle() {
+  if (!this.classList.contains("opened-menu")) {
+    this.classList.add("opened-menu");
+    openMenu();
+  } else {
+    closeMenu();
+  }
+}
 function start() {
   activeLink();
   donateBtn();
   validation();
 
   const menuItems = new DocumentFragment();
-  const menuWrapper = document.querySelector(".menu>div");
+  const menuWrapper = document.querySelector(".menu-container");
+
   function burgerChange(mm) {
     menuItems.append(document.querySelector(".first-part"));
     menuItems.append(document.querySelector(".design"));
@@ -57,4 +80,5 @@ function start() {
   const mmedia = matchMedia("(max-width: 640px)");
   mmedia.addEventListener("change", burgerChange);
   burgerChange(mmedia);
+  document.querySelector(".menu").addEventListener("click", menuClickHandle);
 }

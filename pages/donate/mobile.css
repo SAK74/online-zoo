@@ -1,0 +1,110 @@
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+  .header .wrapper_header {
+    padding: 0;
+    gap: 222px;
+  }
+  .header .wrapper_header .pet-story img {
+    left: 14px;
+  }
+  .header .wrapper_header .menu {
+    right: 4px;
+  }
+  .back-image {
+    height: 187px;
+    background-size: 735px;
+    background-position: -135px -87px;
+  }
+  .pick-a-feed {
+    padding: 1px 10px 0;
+  }
+  .pick-a-feed .content h3 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .pick-a-feed .content .inside-window {
+    margin-top: 29px;
+  }
+  .pick-a-feed .content .inside-window h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-block: 14px 16px;
+  }
+  .pick-a-feed .content .inside-window p {
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+  }
+  .pick-a-feed .content .inside-window .image-box {
+    margin: 0;
+    gap: 5px;
+  }
+  .pick-a-feed .content .inside-window .image-box .number {
+    margin-top: 30px;
+  }
+  .pick-a-feed .content .inside-window .image-box .number div:first-child {
+    font-size: 40px;
+    line-height: 32px;
+  }
+  .pick-a-feed .content .inside-window .image-box .number div {
+    font-size: 9px;
+    line-height: 12px;
+    width: 102%;
+  }
+  .pick-a-feed .content .inside-window .image-box .number + img {
+    width: 8px;
+    margin-top: 14px;
+  }
+  .pick-a-feed .content .inside-window .image-box img:last-child {
+    width: 158px;
+    padding-left: 36px;
+  }
+  .pick-a-feed .content .inside-window form {
+    margin-top: 6px;
+  }
+  .pick-a-feed .content .inside-window form .progress :first-child {
+    left: 0;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar {
+    gap: 53px;
+    height: 14px;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar label img {
+    width: 5px;
+  }
+  footer .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 18px;
+  }
+  footer .wrapper .media {
+    display: inline-flex;
+    gap: 29px;
+  }
+  footer .wrapper .pet_story {
+    width: auto;
+    border: none;
+  }
+  footer .wrapper .pet_story img {
+    top: 13px;
+    left: 71px;
+  }
+  footer .wrapper nav {
+    order: 4;
+  }
+  footer .wrapper nav ul {
+    gap: 31px;
+    justify-content: s;
+    margin-right: 8px;
+  }
+  footer .wrapper .author {
+    order: 2;
+  }
+  footer .wrapper button {
+    order: 1;
+  }
+}/*# sourceMappingURL=mobile.css.map */
