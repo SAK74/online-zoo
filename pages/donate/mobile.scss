@@ -1,0 +1,148 @@
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+  .header {
+    .wrapper_header {
+      padding: 0;
+      gap: 222px;
+      .pet-story {
+        img {
+          left: 14px;
+        }
+      }
+      .menu {
+        right: 4px;
+      }
+    }
+  }
+  .back-image {
+    height: 187px;
+    background-position: -135px -87px;
+    background-size: 735px;
+  }
+  .pick-a-feed {
+    padding: 1px 10px 0;
+    .content {
+      padding-bottom: 24px;
+      h3 {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .inside-window {
+        margin-top: 29px;
+        padding-bottom: 6px;
+        h2 {
+          font-size: 24px;
+          line-height: 29px;
+          margin-block: 14px 16px;
+        }
+        p {
+          width: 100%;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .image-box {
+          margin: 0;
+          gap: 5px;
+          .number {
+            margin-top: 30px;
+            div:first-child {
+              font-size: 40px;
+              line-height: 32px;
+            }
+            div {
+              width: 102%;
+              font-size: 9px;
+              line-height: 12px;
+            }
+          }
+          .number + img {
+            margin-top: 14px;
+            width: 8px;
+          }
+          img:last-child {
+            width: 158px;
+            padding-left: 36px;
+          }
+        }
+        form {
+          margin-top: 6px;
+          .progress {
+            :first-child {
+              left: 0;
+            }
+            .bar {
+              height: 14px;
+              padding-inline: 16px;
+              gap: 53px;
+              &::before {
+                top: 6px;
+                margin-inline: 5px;
+              }
+              input:checked ~ img {
+                padding: 3px;
+                outline-offset: 2px;
+                border-width: 1px;
+                outline-width: 1px;
+              }
+              label {
+                img {
+                  width: 5px;
+                }
+                .amount {
+                  top: 23px;
+                  font-size: 13px;
+                  line-height: 18px;
+                }
+              }
+            }
+          }
+          input[type="number"] {
+            margin-top: 49px;
+            width: 168px;
+            height: 38px;
+          }
+        }
+        p:last-child {
+          width: 101%;
+        }
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4px 12px;
+      gap: 18px;
+      .media {
+        display: inline-flex;
+        gap: 29px;
+      }
+      .pet_story {
+        border: none;
+        width: auto;
+        img {
+          top: 13px;
+          left: 71px;
+        }
+      }
+      nav {
+        order: 4;
+        ul {
+          justify-content: s;
+          margin-right: 8px;
+          gap: 31px;
+        }
+      }
+      .author {
+        order: 2;
+      }
+      button {
+        order: 1;
+      }
+    }
+  }
+}
