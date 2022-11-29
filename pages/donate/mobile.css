@@ -14,11 +14,14 @@
   }
   .back-image {
     height: 187px;
-    background-size: 735px;
     background-position: -135px -87px;
+    background-size: 735px;
   }
   .pick-a-feed {
     padding: 1px 10px 0;
+  }
+  .pick-a-feed .content {
+    padding-bottom: 24px;
   }
   .pick-a-feed .content h3 {
     font-size: 24px;
@@ -26,6 +29,7 @@
   }
   .pick-a-feed .content .inside-window {
     margin-top: 29px;
+    padding-bottom: 6px;
   }
   .pick-a-feed .content .inside-window h2 {
     font-size: 24px;
@@ -33,9 +37,9 @@
     margin-block: 14px 16px;
   }
   .pick-a-feed .content .inside-window p {
+    width: 100%;
     font-size: 16px;
     line-height: 22px;
-    width: 100%;
   }
   .pick-a-feed .content .inside-window .image-box {
     margin: 0;
@@ -49,13 +53,13 @@
     line-height: 32px;
   }
   .pick-a-feed .content .inside-window .image-box .number div {
+    width: 102%;
     font-size: 9px;
     line-height: 12px;
-    width: 102%;
   }
   .pick-a-feed .content .inside-window .image-box .number + img {
-    width: 8px;
     margin-top: 14px;
+    width: 8px;
   }
   .pick-a-feed .content .inside-window .image-box img:last-child {
     width: 158px;
@@ -68,11 +72,35 @@
     left: 0;
   }
   .pick-a-feed .content .inside-window form .progress .bar {
-    gap: 53px;
     height: 14px;
+    padding-inline: 16px;
+    gap: 53px;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar::before {
+    top: 6px;
+    margin-inline: 5px;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar input:checked ~ img {
+    padding: 3px;
+    outline-offset: 2px;
+    border-width: 1px;
+    outline-width: 1px;
   }
   .pick-a-feed .content .inside-window form .progress .bar label img {
     width: 5px;
+  }
+  .pick-a-feed .content .inside-window form .progress .bar label .amount {
+    top: 23px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .pick-a-feed .content .inside-window form input[type=number] {
+    margin-top: 49px;
+    width: 168px;
+    height: 38px;
+  }
+  .pick-a-feed .content .inside-window p:last-child {
+    width: 101%;
   }
   footer .wrapper {
     display: flex;
@@ -86,8 +114,8 @@
     gap: 29px;
   }
   footer .wrapper .pet_story {
-    width: auto;
     border: none;
+    width: auto;
   }
   footer .wrapper .pet_story img {
     top: 13px;
@@ -97,9 +125,9 @@
     order: 4;
   }
   footer .wrapper nav ul {
-    gap: 31px;
     justify-content: s;
     margin-right: 8px;
+    gap: 31px;
   }
   footer .wrapper .author {
     order: 2;
