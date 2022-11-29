@@ -74,6 +74,25 @@ function menuClickHandle() {
     closeMenu();
   }
 }
+function closePopupTestim() {
+  document.body.removeChild(document.querySelector(".popup"));
+}
+overlay.addEventListener("click", closePopupTestim);
+function clickTestimonialHandle() {
+  const popup = document.createElement("div");
+  popup.appendChild(this.cloneNode(true));
+  popup.classList.add("popup");
+  const closeBtn = document.createElement("img");
+  closeBtn.src = "icons/x_icon.png";
+  popup.appendChild(closeBtn);
+  closeBtn.addEventListener("click", () => {
+    document.body.removeChild(document.getElementById("overlay"));
+    closePopupTestim();
+  });
+  document.body.appendChild(overlay);
+  document.body.appendChild(popup);
+}
+
 function start() {
   addEventToImg();
   donateBtn();
@@ -108,11 +127,25 @@ function start() {
       arrows.forEach((arrow) => (arrow.style.transform = "none"));
     }
   }
+  function addPopup(mm) {
+    const testimonials = document.querySelector(
+      ".testimonials .container"
+    ).children;
+    for (elem of testimonials) {
+      if (mm.matches) {
+        elem.addEventListener("click", clickTestimonialHandle);
+      } else {
+        elem.removeEventListener("click", clickTestimonialHandle);
+      }
+    }
+  }
   const mmedia = matchMedia("(max-width: 640px)");
   mmedia.addEventListener("change", burgerChange);
   mmedia.addEventListener("change", arrowChange);
+  mmedia.addEventListener("change", addPopup);
   burgerChange(mmedia);
   arrowChange(mmedia);
+  addPopup(mmedia);
   const mobMedia = matchMedia("(max-width: 320px)");
   mobMedia.addEventListener("change", arrowRotate);
   arrowRotate(mobMedia);
