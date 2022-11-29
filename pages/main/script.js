@@ -127,11 +127,25 @@ function start() {
       arrows.forEach((arrow) => (arrow.style.transform = "none"));
     }
   }
+  function addPopup(mm) {
+    const testimonials = document.querySelector(
+      ".testimonials .container"
+    ).children;
+    for (elem of testimonials) {
+      if (mm.matches) {
+        elem.addEventListener("click", clickTestimonialHandle);
+      } else {
+        elem.removeEventListener("click", clickTestimonialHandle);
+      }
+    }
+  }
   const mmedia = matchMedia("(max-width: 640px)");
   mmedia.addEventListener("change", burgerChange);
   mmedia.addEventListener("change", arrowChange);
+  mmedia.addEventListener("change", addPopup);
   burgerChange(mmedia);
   arrowChange(mmedia);
+  addPopup(mmedia);
   const mobMedia = matchMedia("(max-width: 320px)");
   mobMedia.addEventListener("change", arrowRotate);
   arrowRotate(mobMedia);
