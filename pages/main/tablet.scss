@@ -269,6 +269,19 @@
     right: 0;
     background: rgba($color: gray, $alpha: 0.8);
   }
+  .popup {
+    padding: 20px 36px 17px 16px;
+    background: #f5f7f6;
+    position: fixed;
+    left: calc(50% - 160px);
+    top: calc(50% - 214px);
+    & > img {
+      position: absolute;
+      top: 14px;
+      right: 11px;
+      cursor: pointer;
+    }
+  }
 }
 
 @media screen and (min-width: 321px) and (max-width: 640px) {

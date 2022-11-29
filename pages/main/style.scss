@@ -315,29 +315,29 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    .testimonial {
-      @include testimonial;
-      .testim_header {
-        display: inline-flex;
-        gap: 10px;
-        img {
-          width: 37px;
-          height: 37px;
-        }
-        .name {
-          @include btn;
-        }
-        .descr {
-          @include small;
-        }
-      }
-      p {
-        overflow: hidden;
-        margin: 8px 0;
-        height: 305px;
-        @include small;
-      }
-    }
+    // .testimonial {
+    //   @include testimonial;
+    //   .testim_header {
+    //     display: inline-flex;
+    //     gap: 10px;
+    //     img {
+    //       width: 37px;
+    //       height: 37px;
+    //     }
+    //     .name {
+    //       @include btn;
+    //     }
+    //     .descr {
+    //       @include small;
+    //     }
+    //   }
+    //   p {
+    //     overflow: hidden;
+    //     margin: 8px 0;
+    //     height: 305px;
+    //     @include small;
+    //   }
+    // }
   }
   .progress_wrapper {
     display: inline-flex;
@@ -468,7 +468,29 @@ footer {
     padding-inline: 0px;
   }
 }
-
+.testimonial {
+  @include testimonial;
+  .testim_header {
+    display: inline-flex;
+    gap: 10px;
+    img {
+      width: 37px;
+      height: 37px;
+    }
+    .name {
+      @include btn;
+    }
+    .descr {
+      @include small;
+    }
+  }
+  p {
+    overflow: hidden;
+    margin: 8px 0;
+    height: 305px;
+    @include small;
+  }
+}
 @keyframes menu {
   0% {
     transform: scaleY(0);

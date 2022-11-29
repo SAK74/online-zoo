@@ -74,6 +74,25 @@ function menuClickHandle() {
     closeMenu();
   }
 }
+function closePopupTestim() {
+  document.body.removeChild(document.querySelector(".popup"));
+}
+overlay.addEventListener("click", closePopupTestim);
+function clickTestimonialHandle() {
+  const popup = document.createElement("div");
+  popup.appendChild(this.cloneNode(true));
+  popup.classList.add("popup");
+  const closeBtn = document.createElement("img");
+  closeBtn.src = "icons/x_icon.png";
+  popup.appendChild(closeBtn);
+  closeBtn.addEventListener("click", () => {
+    document.body.removeChild(document.getElementById("overlay"));
+    closePopupTestim();
+  });
+  document.body.appendChild(overlay);
+  document.body.appendChild(popup);
+}
+
 function start() {
   addEventToImg();
   donateBtn();
@@ -117,4 +136,11 @@ function start() {
   mobMedia.addEventListener("change", arrowRotate);
   arrowRotate(mobMedia);
   document.querySelector(".menu").addEventListener("click", menuClickHandle);
+
+  const testimonials = document.querySelector(
+    ".testimonials .container"
+  ).children;
+  for (elem of testimonials) {
+    elem.addEventListener("click", clickTestimonialHandle);
+  }
 }
