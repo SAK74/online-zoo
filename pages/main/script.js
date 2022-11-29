@@ -96,9 +96,9 @@ function start() {
   const arrows = document.querySelectorAll(".icons > img");
   function arrowChange(mm) {
     if (mm.matches) {
-      arrows.forEach((arrow) => (arrow.src = "../../assets/icons/arrow.png"));
+      arrows.forEach((arrow) => (arrow.src = "icons/arrow.png"));
     } else {
-      arrows.forEach((arrow) => (arrow.src = "../../assets/icons/Vector.png"));
+      arrows.forEach((arrow) => (arrow.src = "icons/Vector.png"));
     }
   }
   function arrowRotate(mm) {
