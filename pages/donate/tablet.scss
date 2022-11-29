@@ -4,8 +4,49 @@
   }
   .header {
     max-height: 34px;
+    &.opened-menu {
+      background: #fff;
+      color: orange;
+      .pet_story {
+        z-index: 1;
+        top: 20px;
+        left: 10px;
+        border: 1px solid;
+        h1 {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
     .wrapper_header {
+      position: relative;
       padding-inline: 3px;
+    }
+    .menu-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      transform: scaleY(0);
+      transition: transform 0.5s ease 0s;
+      width: 100%;
+      height: 329px;
+      background: #fff;
+      color: #000;
+      padding-block: 50px;
+      gap: 18px;
+      transform-origin: center top;
+      & > * {
+        padding-inline: 20px;
+      }
+      nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0;
+        text-align: left;
+      }
     }
     .pet_story {
       border: none;
@@ -27,30 +68,8 @@
       padding: 7px;
       background: url("../../assets/icons/burger_menu.png") no-repeat center;
       cursor: pointer;
-      &:hover {
-        & > * {
-          transform: scaleY(1);
-        }
-      }
-      & > * {
-        position: absolute;
-        top: 100%;
-        left: -80px;
-        display: flex;
-        flex-direction: column;
-        transform: scaleY(0);
-        transition: transform 0.5s;
-        height: 170px;
-        padding: 10px;
-        background: #000;
-        transform-origin: top;
-        nav {
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: flex-start;
-          margin: 0;
-          text-align: left;
-        }
+      &.opened-menu {
+        background: url("../../assets/icons/x_icon.png") no-repeat center;
       }
     }
   }
@@ -149,6 +168,14 @@
         justify-self: end;
       }
     }
+  }
+  #overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color: gray, $alpha: 0.8);
   }
 }
 
