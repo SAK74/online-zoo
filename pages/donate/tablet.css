@@ -3,6 +3,8 @@
     width: 640px;
   }
   .header {
+    position: fixed;
+    top: 0;
     max-height: 34px;
   }
   .header.opened-menu {
@@ -101,6 +103,7 @@
     background: url("../../assets/icons/x_icon.png") no-repeat center;
   }
   .back-image {
+    margin-top: 34px;
     height: 335px;
     background-position: -256px -182px;
     background-size: 1340px 700px;
