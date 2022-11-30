@@ -1,5 +1,7 @@
 @media screen and (max-width: 640px) {
   .header {
+    position: fixed;
+    top: 0;
     max-height: 34px;
     &.opened-menu {
       background: #fff;
@@ -72,6 +74,7 @@
   }
   .watch-favorite {
     top: -34px;
+    margin-top: 34px;
     height: 373px;
     .text {
       top: 82px;
