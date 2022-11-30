@@ -378,3 +378,8 @@ footer {
     padding-inline: 0px;
   }
 }
+@media screen and (min-width: 1001px) {
+  body {
+    min-width: 1600px;
+  }
+}

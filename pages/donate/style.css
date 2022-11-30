@@ -449,4 +449,10 @@ footer .wrapper .author {
 footer ul {
   list-style: none;
   padding-inline: 0px;
+}
+
+@media screen and (min-width: 1001px) {
+  body {
+    min-width: 1600px;
+  }
 }/*# sourceMappingURL=style.css.map */
