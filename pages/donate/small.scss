@@ -1,8 +1,3 @@
-@media screen and (min-width: 1001px) {
-  body {
-    min-width: 1600px;
-  }
-}
 @media screen and (max-width: 1000px) {
   body {
     width: 1000px;
@@ -76,5 +71,10 @@
         margin: 0 0px 6px -84px;
       }
     }
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+  body {
+    width: 1000px;
   }
 }
