@@ -131,7 +131,7 @@ function start() {
     const testimonials = document.querySelector(
       ".testimonials .container"
     ).children;
-    for (elem of testimonials) {
+    for (const elem of testimonials) {
       if (mm.matches) {
         elem.addEventListener("click", clickTestimonialHandle);
       } else {
@@ -150,4 +150,7 @@ function start() {
   mobMedia.addEventListener("change", arrowRotate);
   arrowRotate(mobMedia);
   document.querySelector(".menu").addEventListener("click", menuClickHandle);
+  testimonialsCarousel();
 }
+import { testimonialsCarousel } from "./carousel/carousel.js";
+start();

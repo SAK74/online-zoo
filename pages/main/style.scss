@@ -311,7 +311,15 @@ body {
     text-align: center;
     @include h3;
   }
+  .wrapper-container {
+    position: relative;
+    overflow: hidden;
+    width: 1170px;
+    height: 391px;
+  }
   .container {
+    transition: transform 1s;
+    position: absolute;
     display: flex;
     justify-content: center;
     gap: 30px;

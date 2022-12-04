@@ -202,16 +202,23 @@
   .testimonials h3 {
     margin: 59px 0 31px;
   }
+  .testimonials .progress_wrapper {
+    display: none;
+  }
+  .testimonials .wrapper-container {
+    width: 100%;
+    height: 365px;
+  }
   .testimonials .container {
     flex-direction: column;
     gap: 14px;
   }
   .testimonials .container .testimonial {
-    width: 100%;
     height: auto;
   }
   .testimonials .container .testimonial > * {
     padding-bottom: 2px;
+    width: initial;
   }
   .testimonials .container .testimonial p {
     height: 34px;

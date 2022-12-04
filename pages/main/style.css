@@ -380,7 +380,15 @@ body {
   line-height: 47px;
   font-weight: 400;
 }
+.testimonials .wrapper-container {
+  position: relative;
+  overflow: hidden;
+  width: 1170px;
+  height: 391px;
+}
 .testimonials .container {
+  transition: transform 1s;
+  position: absolute;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -542,13 +550,13 @@ footer ul {
 
 .testimonial {
   border-radius: 20px;
-  width: 264px;
   height: 387px;
   padding: 2px;
   background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 .testimonial > * {
   border-radius: 20px;
+  width: 234px;
   padding: 12px 15px 14px 15px;
   background: #F1F3F2;
 }

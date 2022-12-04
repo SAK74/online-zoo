@@ -1,15 +1,16 @@
-@import './backgrounds.scss';
-@import './colors.scss';
+@import "./backgrounds.scss";
+@import "./colors.scss";
 
-@mixin testimonial{
+@mixin testimonial {
   border-radius: 20px;
-  width: 264px;
+  // width: 264px;
   height: 387px;
   padding: 2px;
   background: $Pink_grad;
-  &>*{
-      border-radius: 20px;
-      padding: 12px 15px 14px 15px;
-      background: $Light_gray;
+  & > * {
+    border-radius: 20px;
+    width: 234px;
+    padding: 12px 15px 14px 15px;
+    background: $Light_gray;
   }
 }

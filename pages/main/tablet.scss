@@ -210,14 +210,22 @@
     h3 {
       margin: 59px 0 31px;
     }
+    .progress_wrapper {
+      display: none;
+    }
+    .wrapper-container {
+      width: 100%;
+      height: 365px;
+    }
     .container {
       flex-direction: column;
       gap: 14px;
       .testimonial {
-        width: 100%;
+        // width: 100%;
         height: auto;
         & > * {
           padding-bottom: 2px;
+          width: initial;
         }
         p {
           height: 34px;

@@ -112,12 +112,16 @@
     h3 {
       margin: 100px auto 29px;
     }
+    .wrapper-container {
+      width: 956px;
+    }
     .container {
       .testimonial {
-        width: 293px;
+        // width: 293px;
         height: 391px;
-        &:last-child {
-          display: none;
+        & > * {
+          // display: none;
+          width: 263px;
         }
       }
     }
