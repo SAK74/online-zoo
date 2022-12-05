@@ -46,6 +46,9 @@
     background-image: url("../../assets/images/palm_foto (1).png"), url("../../assets/images/strelitzia 1.png");
     background-size: 195px, 240px;
   }
+  .pets .cards-wrapper {
+    width: 940px;
+  }
   .pets .content .arrow {
     position: absolute;
   }
@@ -95,21 +98,20 @@
   .testimonials h3 {
     margin: 100px auto 29px;
   }
+  .testimonials .wrapper-container {
+    width: 956px;
+  }
   .testimonials .container .testimonial {
-    width: 293px;
     height: 391px;
   }
-  .testimonials .container .testimonial:last-child {
-    display: none;
+  .testimonials .container .testimonial > * {
+    width: 263px;
   }
   .testimonials .progress_wrapper {
     margin-top: 17px;
   }
   .testimonials .progress_wrapper .slider {
     width: 390px;
-  }
-  .testimonials .progress_wrapper .slider::-webkit-slider-thumb {
-    width: 75px;
   }
   .testimonials button {
     bottom: 140px;

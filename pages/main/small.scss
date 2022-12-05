@@ -55,9 +55,13 @@
     background-image: url("../../assets/images/palm_foto (1).png"),
       url("../../assets/images/strelitzia\ 1.png");
     background-size: 195px, 240px;
+    .cards-wrapper {
+      width: 940px;
+    }
     .content {
       .arrow {
         position: absolute;
+
         &:first-child {
           left: 353px;
         }
@@ -112,12 +116,14 @@
     h3 {
       margin: 100px auto 29px;
     }
+    .wrapper-container {
+      width: 956px;
+    }
     .container {
       .testimonial {
-        width: 293px;
         height: 391px;
-        &:last-child {
-          display: none;
+        & > * {
+          width: 263px;
         }
       }
     }
@@ -125,9 +131,6 @@
       margin-top: 17px;
       .slider {
         width: 390px;
-        &::-webkit-slider-thumb {
-          width: 75px;
-        }
       }
     }
     button {

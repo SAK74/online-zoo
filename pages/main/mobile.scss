@@ -62,12 +62,16 @@
     height: auto;
     background-position: -13px bottom, 252px bottom;
     background-size: 72px, 85px;
+    .cards-wrapper {
+      width: 290px;
+    }
     .content {
       .arrow {
         display: none;
       }
       .cards-container {
-        height: 1400px;
+        margin-bottom: 7px;
+        // height: 1400px;
         grid-template-columns: auto;
         gap: 15px;
       }

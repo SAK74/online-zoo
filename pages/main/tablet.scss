@@ -128,6 +128,9 @@
     background-position: -57px bottom, right bottom;
     background-size: 190px, 172px;
     gap: 16px;
+    .cards-wrapper {
+      width: 600px;
+    }
     .content {
       position: relative;
       .arrow {
@@ -140,10 +143,11 @@
         }
       }
       .cards-container {
-        overflow: hidden;
-        height: 800px;
-        row-gap: 88px;
+        // overflow: hidden;
+        // height: 800px;
+        // row-gap: 88px;
         grid-template-columns: auto auto;
+        margin-bottom: 40px;
         .card {
           .image-container {
             width: 285px;
@@ -210,14 +214,22 @@
     h3 {
       margin: 59px 0 31px;
     }
+    .progress_wrapper {
+      display: none;
+    }
+    .wrapper-container {
+      width: 100%;
+      height: 365px;
+    }
     .container {
       flex-direction: column;
       gap: 14px;
       .testimonial {
-        width: 100%;
+        // width: 100%;
         height: auto;
         & > * {
           padding-bottom: 2px;
+          width: initial;
         }
         p {
           height: 34px;

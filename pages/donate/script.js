@@ -6,9 +6,15 @@ function donateBtn() {
     });
   }
 }
-function maxLenght(el) {
+function handleAmountChange(el) {
   if (el.value > 9999) {
     el.value = 9999;
+  }
+  const ranges = document.forms["donate"]["amount"];
+  for (const range of ranges) {
+    if (range.value === el.value) {
+      range.checked = true;
+    }
   }
 }
 function activeLink() {
@@ -60,6 +66,18 @@ function menuClickHandle() {
     closeMenu();
   }
 }
+function handleRangeCheck() {
+  document.forms["donate"]["another-amount"].value = this.value;
+}
+function handleFormElements() {
+  const ranges = document.forms["donate"]["amount"];
+  for (const range of ranges) {
+    if (range.value === "100") {
+      range.checked = true;
+    }
+    range.addEventListener("change", handleRangeCheck);
+  }
+}
 function start() {
   activeLink();
   donateBtn();
@@ -81,4 +99,5 @@ function start() {
   mmedia.addEventListener("change", burgerChange);
   burgerChange(mmedia);
   document.querySelector(".menu").addEventListener("click", menuClickHandle);
+  handleFormElements();
 }
