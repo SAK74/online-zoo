@@ -1,23 +1,3 @@
-// function showPetInfo(target) {
-//   target.nextSibling.nextSibling.style.transform = "translateY(-50px)";
-//   target.nextSibling.nextSibling.style.color = "white";
-// }
-// function hidePetInfo(target) {
-//   target.nextSibling.nextSibling.style.transform = "none";
-//   target.nextSibling.nextSibling.style.color = "inherit";
-// }
-
-// function addEventToImg() {
-//   const cards = document.getElementsByClassName("image-container");
-//   for (let i = 0; i < cards.length; i++) {
-//     cards[i].addEventListener("mouseover", (ev) =>
-//       showPetInfo(ev.currentTarget)
-//     );
-//     cards[i].addEventListener("mouseout", (ev) =>
-//       hidePetInfo(ev.currentTarget)
-//     );
-//   }
-// }
 function donateBtn() {
   const donateBtns = document.getElementsByClassName("to_donate");
   for (let i = 0; i < donateBtns.length; i++) {
@@ -94,7 +74,6 @@ function clickTestimonialHandle() {
 }
 
 function start() {
-  // addEventToImg();
   donateBtn();
   validation();
   activeLink();

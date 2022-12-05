@@ -43,6 +43,9 @@ function setItems(container) {
   });
 }
 function turn() {
+  this.removeEventListener("click", turn);
+  document.querySelector(".cards-wrapper").style.flexDirection =
+    this.innerText === "←" ? "row" : "row-reverse";
   const newContainer = document.createElement("div");
   newContainer.className = "cards-container";
   const wrapper = document.querySelector(".cards-wrapper");
@@ -55,21 +58,15 @@ function turn() {
   });
   setTimeout(() => {
     wrapper.firstElementChild.remove();
+    this.addEventListener("click", turn);
   }, 500);
 }
 export function petCarousel() {
   const container = document.querySelector(".cards-container");
   setItems(container);
 
-  document.querySelector(".arrow:first-child").addEventListener("click", () => {
-    document.querySelector(".cards-wrapper").style.flexDirection = "row";
-    turn();
-  });
-  document.querySelector(".arrow:last-child").addEventListener("click", () => {
-    document.querySelector(".cards-wrapper").style.flexDirection =
-      "row-reverse";
-    turn();
-  });
+  document.querySelector(".arrow:first-child").addEventListener("click", turn);
+  document.querySelector(".arrow:last-child").addEventListener("click", turn);
   matchMedia("(min-width: 641px").addEventListener("change", () => {
     const container = document.querySelector(".cards-container");
     for (let i = container.children.length; i; i--) {
