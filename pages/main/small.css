@@ -113,9 +113,6 @@
   .testimonials .progress_wrapper .slider {
     width: 390px;
   }
-  .testimonials .progress_wrapper .slider::-webkit-slider-thumb {
-    width: 75px;
-  }
   .testimonials button {
     bottom: 140px;
     left: 30px;

@@ -121,10 +121,8 @@
     }
     .container {
       .testimonial {
-        // width: 293px;
         height: 391px;
         & > * {
-          // display: none;
           width: 263px;
         }
       }
@@ -133,9 +131,6 @@
       margin-top: 17px;
       .slider {
         width: 390px;
-        &::-webkit-slider-thumb {
-          width: 75px;
-        }
       }
     }
     button {

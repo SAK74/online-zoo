@@ -80,47 +80,47 @@
               <img src="icons/x_icon.png" alt="x-icon" />
               <img src="icons/panda_widget1.png" alt="panda-widget" />
             </div>
-            <form>
+            <form name="donate">
               <div class="progress">
                 <p>Amount</p>
                 <div class="bar">
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="5000" />
                     <span class="amount">$5000</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="2000" />
                     <span class="amount">$2000</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" checked />
+                    <input type="radio" name="amount" value="1000" />
                     <span class="amount">$1000</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="500" />
                     <span class="amount">$500</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="200" />
                     <span class="amount">$200</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="100" />
                     <span class="amount">$100</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="50" />
                     <span class="amount">$50</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
                   <label>
-                    <input type="radio" name="amount" />
+                    <input type="radio" name="amount" value="25" />
                     <span class="amount">$25</span>
                     <img src="icons\Ellipse 7.png" alt="dot" />
                   </label>
@@ -129,8 +129,8 @@
               <div class="amount-input">
                 <input
                   type="number"
-                  oninput="maxLenght(this);"
-                  id="amount"
+                  oninput="handleAmountChange(this);"
+                  id="another-amount"
                   placeholder="Another amount"
                 />
                 <span>$</span>

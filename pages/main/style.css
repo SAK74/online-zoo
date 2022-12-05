@@ -418,7 +418,7 @@ body {
 }
 .testimonials .progress_wrapper .slider::-webkit-slider-thumb {
   border-radius: 5px;
-  width: 115px;
+  width: 12.5%;
   height: 6px;
   background: orange;
   -webkit-appearance: none;
