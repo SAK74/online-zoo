@@ -128,6 +128,9 @@
     background-position: -57px bottom, right bottom;
     background-size: 190px, 172px;
     gap: 16px;
+    .cards-wrapper {
+      width: 600px;
+    }
     .content {
       position: relative;
       .arrow {
@@ -140,10 +143,11 @@
         }
       }
       .cards-container {
-        overflow: hidden;
-        height: 800px;
-        row-gap: 88px;
+        // overflow: hidden;
+        // height: 800px;
+        // row-gap: 88px;
         grid-template-columns: auto auto;
+        margin-bottom: 40px;
         .card {
           .image-container {
             width: 285px;

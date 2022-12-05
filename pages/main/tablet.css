@@ -126,6 +126,9 @@
     background-size: 190px, 172px;
     gap: 16px;
   }
+  .pets .cards-wrapper {
+    width: 600px;
+  }
   .pets .content {
     position: relative;
   }
@@ -139,10 +142,8 @@
     left: 316px;
   }
   .pets .content .cards-container {
-    overflow: hidden;
-    height: 800px;
-    row-gap: 88px;
     grid-template-columns: auto auto;
+    margin-bottom: 40px;
   }
   .pets .content .cards-container .card .image-container {
     width: 285px;

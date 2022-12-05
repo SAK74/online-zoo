@@ -200,6 +200,12 @@ body {
   background-repeat: no-repeat;
   gap: 82px;
 }
+.pets .cards-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 1156px;
+  gap: 80px;
+}
 .pets button {
   position: static;
   left: calc(50% - 149px + 0px);
@@ -387,10 +393,10 @@ body {
   height: 391px;
 }
 .testimonials .container {
-  transition: transform 1s;
   position: absolute;
   display: flex;
   justify-content: center;
+  transition: transform 1s;
   gap: 30px;
 }
 .testimonials .progress_wrapper {

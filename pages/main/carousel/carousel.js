@@ -1,4 +1,4 @@
-import data from "./data.js";
+import data from "./data-testimonials.js";
 
 function handleChange() {
   const step = matchMedia("(max-width: 1000px)").matches ? 327 : 297;

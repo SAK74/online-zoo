@@ -55,9 +55,13 @@
     background-image: url("../../assets/images/palm_foto (1).png"),
       url("../../assets/images/strelitzia\ 1.png");
     background-size: 195px, 240px;
+    .cards-wrapper {
+      width: 940px;
+    }
     .content {
       .arrow {
         position: absolute;
+
         &:first-child {
           left: 353px;
         }

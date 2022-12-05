@@ -46,6 +46,9 @@
     background-image: url("../../assets/images/palm_foto (1).png"), url("../../assets/images/strelitzia 1.png");
     background-size: 195px, 240px;
   }
+  .pets .cards-wrapper {
+    width: 940px;
+  }
   .pets .content .arrow {
     position: absolute;
   }
