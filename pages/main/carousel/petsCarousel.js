@@ -59,7 +59,7 @@ function turn() {
   setTimeout(() => {
     wrapper.firstElementChild.remove();
     this.addEventListener("click", turn);
-  }, 500);
+  }, 800);
 }
 export function petCarousel() {
   const container = document.querySelector(".cards-container");

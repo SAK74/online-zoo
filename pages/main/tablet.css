@@ -142,8 +142,8 @@
     left: 316px;
   }
   .pets .content .cards-container {
-    grid-template-columns: auto auto;
     margin-bottom: 40px;
+    grid-template-columns: auto auto;
   }
   .pets .content .cards-container .card .image-container {
     width: 285px;
@@ -212,14 +212,15 @@
   }
   .testimonials .container {
     flex-direction: column;
+    transition: none;
     gap: 14px;
   }
   .testimonials .container .testimonial {
     height: auto;
   }
   .testimonials .container .testimonial > * {
-    padding-bottom: 2px;
     width: initial;
+    padding-bottom: 2px;
   }
   .testimonials .container .testimonial p {
     height: 34px;
