@@ -143,11 +143,8 @@
         }
       }
       .cards-container {
-        // overflow: hidden;
-        // height: 800px;
-        // row-gap: 88px;
-        grid-template-columns: auto auto;
         margin-bottom: 40px;
+        grid-template-columns: auto auto;
         .card {
           .image-container {
             width: 285px;
@@ -223,13 +220,13 @@
     }
     .container {
       flex-direction: column;
+      transition: none;
       gap: 14px;
       .testimonial {
-        // width: 100%;
         height: auto;
         & > * {
-          padding-bottom: 2px;
           width: initial;
+          padding-bottom: 2px;
         }
         p {
           height: 34px;
