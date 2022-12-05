@@ -107,10 +107,9 @@ function start() {
     }
   }
   function addPopup(mm) {
-    const testimonials = document.querySelector(
-      ".testimonials .container"
-    ).children;
-    for (const elem of testimonials) {
+    const container = document.querySelector(".testimonials .container");
+    container.style.transform = "none";
+    for (const elem of container.children) {
       if (mm.matches) {
         elem.addEventListener("click", clickTestimonialHandle);
       } else {
@@ -124,12 +123,12 @@ function start() {
   mmedia.addEventListener("change", addPopup);
   burgerChange(mmedia);
   arrowChange(mmedia);
+  testimonialsCarousel();
   addPopup(mmedia);
   const mobMedia = matchMedia("(max-width: 320px)");
   mobMedia.addEventListener("change", arrowRotate);
   arrowRotate(mobMedia);
   document.querySelector(".menu").addEventListener("click", menuClickHandle);
-  testimonialsCarousel();
   petCarousel();
 }
 import { testimonialsCarousel } from "./carousel/carousel.js";
