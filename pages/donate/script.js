@@ -12,9 +12,7 @@ function handleAmountChange(el) {
   }
   const ranges = document.forms["donate"]["amount"];
   for (const range of ranges) {
-    if (range.value === el.value) {
-      range.checked = true;
-    }
+    range.checked = range.value === el.value;
   }
 }
 function activeLink() {
