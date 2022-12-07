@@ -61,6 +61,7 @@
   }
   .pets .cards-wrapper {
     width: 290px;
+    height: 1400px;
   }
   .pets .content .arrow {
     display: none;

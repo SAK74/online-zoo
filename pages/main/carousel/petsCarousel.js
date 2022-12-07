@@ -43,23 +43,24 @@ function setItems(container) {
   });
 }
 function turn() {
+  const button = this;
   this.removeEventListener("click", turn);
-  document.querySelector(".cards-wrapper").style.flexDirection =
-    this.innerText === "←" ? "row" : "row-reverse";
+  const right = this.innerText !== "←";
+  const wrapper = document.querySelector(".cards-wrapper");
+  const oldContainer = wrapper.firstElementChild;
   const newContainer = document.createElement("div");
   newContainer.className = "cards-container";
-  const wrapper = document.querySelector(".cards-wrapper");
   setItems(newContainer);
   wrapper.appendChild(newContainer);
-  newContainer.scrollIntoView({
-    behavior: "smooth",
-    block: "center",
-    // inline: "center",
+  oldContainer.addEventListener("animationend", () => {
+    oldContainer.remove();
+    newContainer.style.animationName = "";
+    button.addEventListener("click", turn);
   });
-  setTimeout(() => {
-    wrapper.firstElementChild.remove();
-    this.addEventListener("click", turn);
-  }, 800);
+  oldContainer.style.animationName = right ? "center-left" : "right-center";
+  oldContainer.style.animationDirection = right ? "normal" : "reverse";
+  newContainer.style.animationName = right ? "right-center" : "center-left";
+  newContainer.style.animationDirection = right ? "normal" : "reverse";
 }
 export function petCarousel() {
   const container = document.querySelector(".cards-container");
