@@ -164,26 +164,29 @@ body {
   background-repeat: no-repeat;
   gap: 82px;
   .cards-wrapper {
-    display: flex;
+    position: relative;
     overflow: hidden;
     width: 1156px;
-    gap: 80px;
+    height: 870px;
+    padding-inline: 20px;
   }
   button {
     position: static;
     @include round_btn;
   }
   .content {
-    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 21px;
     .arrow {
+      z-index: 1;
       @include arrow;
     }
     .cards-container {
+      position: absolute;
       display: grid;
+      animation-fill-mode: forwards;
+      animation-duration: 1s;
       grid-template-columns: auto auto auto;
       grid-gap: 26px;
       column-gap: 26px;
@@ -489,5 +492,21 @@ footer {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+@keyframes right-center {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes center-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
   }
 }

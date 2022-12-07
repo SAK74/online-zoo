@@ -48,6 +48,7 @@
   }
   .pets .cards-wrapper {
     width: 940px;
+    height: 800px;
   }
   .pets .content .arrow {
     position: absolute;

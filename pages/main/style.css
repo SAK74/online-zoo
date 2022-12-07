@@ -201,10 +201,11 @@ body {
   gap: 82px;
 }
 .pets .cards-wrapper {
-  display: flex;
+  position: relative;
   overflow: hidden;
   width: 1156px;
-  gap: 80px;
+  height: 870px;
+  padding-inline: 20px;
 }
 .pets button {
   position: static;
@@ -215,9 +216,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 21px;
 }
 .pets .content .arrow {
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +233,12 @@ body {
   background: #4B9200;
 }
 .pets .content .cards-container {
+  position: absolute;
   display: grid;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   grid-template-columns: auto auto auto;
   grid-gap: 26px;
   -moz-column-gap: 26px;
@@ -608,5 +614,37 @@ footer ul {
   }
   100% {
     transform: scaleY(1);
+  }
+}
+@-webkit-keyframes right-center {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@keyframes right-center {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+@-webkit-keyframes center-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+@keyframes center-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
   }
 }/*# sourceMappingURL=style.css.map */
