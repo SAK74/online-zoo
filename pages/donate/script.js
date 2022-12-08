@@ -6,6 +6,12 @@ function donateBtn() {
     });
   }
 }
+function forbidden(ev) {
+  const forbiddens = ["+", "-", ".", ","];
+  if (forbiddens.includes(ev.key)) {
+    ev.preventDefault();
+  }
+}
 function handleAmountChange(el) {
   if (el.value > 9999) {
     el.value = 9999;
