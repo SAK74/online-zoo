@@ -244,6 +244,7 @@ body {
 .pick-a-feed .content .inside-window .progress .bar > span .amount,
 .pick-a-feed .content .inside-window .progress .bar label .amount {
   position: absolute;
+  z-index: 1;
   top: 40px;
   left: -8px;
 }
