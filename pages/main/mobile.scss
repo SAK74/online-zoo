@@ -1,0 +1,190 @@
+@media screen and (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+  .header {
+    .wrapper_header {
+      padding: 0;
+      gap: 222px;
+      .pet-story {
+        img {
+          left: 14px;
+        }
+      }
+      .menu {
+        right: 4px;
+      }
+    }
+  }
+  .watch-favorite {
+    top: 0px;
+    height: 187px;
+    .text {
+      top: 40px;
+      left: 182px;
+      width: 128px;
+      font-size: 28px;
+      line-height: 21px;
+      &:before {
+        top: -18px;
+        left: -18px;
+        width: 119px;
+        height: 119px;
+      }
+    }
+    .btn_1 {
+      top: 206px;
+      left: calc(50% - 149px);
+    }
+  }
+  .backstage {
+    padding: 83px 11px 0;
+    background-position: 266px 31px;
+    background-size: 54px;
+    .text {
+      width: auto;
+      h2 {
+        margin: 6px 0 9px;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0em;
+      }
+      h4 {
+        margin: 18px 0 11px;
+      }
+      h4 + p {
+        width: auto;
+      }
+    }
+  }
+  .pets {
+    margin: 30px 0 0;
+    height: auto;
+    background-position: -13px bottom, 252px bottom;
+    background-size: 72px, 85px;
+    .cards-wrapper {
+      width: 290px;
+      height: 1400px;
+    }
+    .content {
+      .arrow {
+        display: none;
+      }
+      .cards-container {
+        margin-bottom: 7px;
+        // height: 1400px;
+        grid-template-columns: auto;
+        gap: 15px;
+      }
+    }
+    button {
+      margin: -9px 0 60px;
+    }
+  }
+  .pick-a-ffriend {
+    padding: 20px 10px;
+    .content {
+      text-align: center;
+      h2 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-block: 20px 18px;
+      }
+      .text {
+        padding: 0;
+        h4 {
+          font-size: 18px;
+          line-height: 22px;
+        }
+        h5,
+        p {
+          display: none;
+        }
+      }
+      h3 {
+        font-size: 24px;
+        line-height: 29px;
+        margin-block: 19px 22px;
+      }
+      .icons {
+        right: -5px;
+        flex-direction: column;
+        gap: 42px;
+        img {
+          top: 190px;
+          right: -36px;
+          &:first-of-type {
+            top: 440px;
+          }
+        }
+        figure {
+          figcaption {
+            top: calc(100% + 10px);
+            text-align: left;
+          }
+        }
+      }
+      button {
+        margin-block: 62px -18px;
+      }
+    }
+  }
+  .testimonials {
+    height: 580px;
+    padding: 0 14px;
+    background-position: right 514px;
+    background-size: 60px;
+    background-position-y: 514px;
+    .testim_header {
+      position: relative;
+      top: -5px;
+      left: -8px;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 29px;
+      margin-block: 30px 21px;
+    }
+    .progress_wrapper {
+      display: none;
+    }
+    button {
+      top: 465px;
+    }
+  }
+  footer {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4px 12px;
+      gap: 18px;
+      .media {
+        display: inline-flex;
+        gap: 29px;
+      }
+      .pet_story {
+        border: none;
+        width: auto;
+        img {
+          top: 13px;
+          left: 71px;
+        }
+      }
+      nav {
+        order: 4;
+        ul {
+          justify-content: s;
+          margin-right: 8px;
+          gap: 31px;
+        }
+      }
+      .author {
+        order: 2;
+      }
+      button {
+        order: 1;
+      }
+    }
+  }
+}

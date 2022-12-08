@@ -1,0 +1,51 @@
+export default [
+  {
+    id: 0,
+    name: "Giant Pandas",
+    image: "images/Pandas.png",
+    location: "Native to Southwest China",
+    food: "banana-bamboo",
+  },
+  {
+    id: 1,
+    name: "Eagles",
+    image: "images/Eagle.png",
+    location: "Native to South America",
+    food: "meet-fish",
+  },
+  {
+    id: 2,
+    name: "Alligators",
+    image: "images/aligators.png",
+    location: "Native to Southeastern U. S.",
+    food: "meet-fish",
+  },
+  {
+    id: 3,
+    name: "Gorillas",
+    image: "images/Gorilla.png",
+    location: "Native to Congo",
+    food: "banana-bamboo",
+  },
+  {
+    id: 4,
+    name: "Two-toed Sloth",
+    image: "images/Two-toed.png",
+    location: "Mesoamerica, South America",
+    food: "banana-bamboo",
+  },
+  {
+    id: 5,
+    name: "cheetahs",
+    image: "images/Cheetahs.png",
+    location: "Native to Africa",
+    food: "meet-fish",
+  },
+  {
+    id: 6,
+    name: "Penguins",
+    image: "images/Penguins.png",
+    location: "Native to Antarctica",
+    food: "meet-fish",
+  },
+];

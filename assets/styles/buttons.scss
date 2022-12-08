@@ -1,0 +1,68 @@
+@import "./backgrounds.scss";
+@import "./colors.scss";
+
+.btn_1 {
+  position: absolute;
+  border: none;
+  width: 298px;
+  height: 54px;
+  background: $Orange;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: "Roboto";
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0em;
+  color: #ffff;
+  &:hover {
+    background: #e47209;
+  }
+  &:active {
+    background: $Green;
+  }
+  &:disabled {
+    background: $Gray;
+  }
+}
+@mixin round_btn($Left: 0px) {
+  left: calc(50% - 298px / 2 + $Left);
+  border-radius: 25px;
+  @extend .btn_1;
+}
+@mixin rect_btn($Left: 0px) {
+  left: calc(50% - 298px / 2 + $Left);
+  border-radius: 5px;
+  @extend .btn_1;
+}
+@mixin arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+  background: $Orange;
+  cursor: pointer;
+  color: #ffffff;
+  &:hover {
+    background: $Green;
+  }
+}
+@mixin submit_btn {
+  border: 1px solid #d31414;
+  border-radius: 5px;
+  width: 129px;
+  height: 42px;
+  background: $Light_gray;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0em;
+  color: #d31414;
+}

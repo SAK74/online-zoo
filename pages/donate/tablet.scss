@@ -1,0 +1,216 @@
+@media screen and (max-width: 640px) {
+  // body {
+  //   width: 640px;
+  // }
+  .header {
+    position: fixed;
+    top: 0;
+    max-height: 34px;
+    &.opened-menu {
+      background: #fff;
+      color: orange;
+      .pet_story {
+        z-index: 1;
+        top: 20px;
+        left: 10px;
+        border: 1px solid;
+        h1 {
+          font-size: 15px;
+          line-height: 18px;
+        }
+      }
+    }
+    .wrapper_header {
+      position: relative;
+      position: relative;
+      padding-inline: 3px;
+    }
+    .menu-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      transform: scaleY(0);
+      transition: transform 0.5s ease 0s;
+      width: 100%;
+      height: 329px;
+      background: #fff;
+      color: #000;
+      padding-block: 50px;
+      gap: 18px;
+      transform-origin: center top;
+      & > * {
+        padding-inline: 20px;
+      }
+      nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0;
+        text-align: left;
+      }
+    }
+    .menu-container {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      transform: scaleY(0);
+      transition: transform 0.5s ease 0s;
+      width: 100%;
+      height: 329px;
+      background: #fff;
+      color: #000;
+      padding-block: 50px;
+      gap: 18px;
+      transform-origin: center top;
+      & > * {
+        padding-inline: 20px;
+      }
+      nav {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 0;
+        text-align: left;
+      }
+    }
+    .pet_story {
+      border: none;
+      & > * {
+        font-size: 12px;
+        line-height: 14px;
+      }
+      img {
+        position: absolute;
+        left: 20px;
+        block-size: 15px;
+      }
+    }
+    .menu {
+      position: relative;
+      right: 10px;
+      width: 18px;
+      height: 18px;
+      padding: 7px;
+      background: url("../../assets/icons/burger_menu.png") no-repeat center;
+      cursor: pointer;
+      &.opened-menu {
+        background: url("../../assets/icons/x_icon.png") no-repeat center;
+      }
+    }
+  }
+  .back-image {
+    margin-top: 34px;
+    height: 335px;
+    background-position: -256px -182px;
+    background-size: 1340px 700px;
+  }
+  .pick-a-feed {
+    padding: 1px 20px 0;
+    .content {
+      padding-bottom: 44px;
+      .text {
+        h3 {
+          margin-top: 28px;
+          width: initial;
+          font-size: 24px;
+          line-height: 29px;
+        }
+        p {
+          margin-top: 20px;
+        }
+      }
+      h3:not(.text *) {
+        margin-top: 32px;
+      }
+      .inside-window {
+        margin-top: -7px;
+        padding: 6px 0 24px;
+        p {
+          margin: -6px 0 12px 0;
+          width: 85%;
+          text-align: center;
+        }
+        form {
+          margin-top: 42px;
+          .progress {
+            width: 100%;
+            :first-child {
+              position: relative;
+              top: 4px;
+              left: 10px;
+              text-align: left;
+            }
+            label:nth-of-type(2),
+            label:nth-of-type(3) {
+              display: none;
+            }
+            .bar {
+              gap: 93px;
+              padding-inline: 23px;
+              &:before {
+                width: 86%;
+              }
+            }
+          }
+          input[type="number"] {
+            width: 180px;
+            height: 42px;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    .wrapper {
+      padding: 11px 20px;
+      grid-template-columns: 50% 50%;
+      form {
+        display: none;
+      }
+      .media {
+        margin-top: -16px;
+        grid-area: 1/2/3/3;
+        justify-self: end;
+        li {
+          margin-block: 18px;
+        }
+        .wrapper_media + span {
+          display: none;
+        }
+      }
+      .to_donate {
+        margin-top: -26px;
+        grid-row: 2;
+        grid-column: 1;
+      }
+      nav {
+        ul {
+          margin: 0 0 18px 0px;
+          gap: 37px;
+        }
+      }
+      .author {
+        margin: -8px 0 0px 0;
+        justify-self: end;
+      }
+    }
+  }
+  #overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color: gray, $alpha: 0.8);
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 640px) {
+  body {
+    width: 640px;
+  }
+}

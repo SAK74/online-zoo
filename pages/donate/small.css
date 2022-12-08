@@ -1,0 +1,70 @@
+@media screen and (max-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+  .header .wrapper_header {
+    width: 100%;
+    padding-inline: 30px;
+  }
+  .header .wrapper_header nav span {
+    width: 96px;
+  }
+  .back-image {
+    background-position: -176px;
+    background-size: 1600px 780px;
+  }
+  .pick-a-feed {
+    padding: 4px 30px 30px;
+  }
+  .pick-a-feed .content .text h3 {
+    width: 80%;
+  }
+  .pick-a-feed .content .text p {
+    margin-top: 30px;
+  }
+  .pick-a-feed .content .inside-window {
+    margin-top: 40px;
+    padding: 0 0 30px;
+  }
+  .pick-a-feed .content .inside-window h2 {
+    margin: 22px 0 30px;
+  }
+  .pick-a-feed .content .inside-window p {
+    align-self: initial;
+  }
+  .pick-a-feed .content .inside-window .progress {
+    width: 86%;
+  }
+  .pick-a-feed .content .inside-window .progress label:first-child {
+    display: none;
+  }
+  .pick-a-feed .content .inside-window .progress .bar {
+    gap: 112px;
+  }
+  .pick-a-feed .content .inside-window button {
+    position: static;
+    margin-top: 30px;
+  }
+  .pick-a-feed .content .inside-window p:last-child {
+    margin-top: 30px;
+  }
+  footer .wrapper {
+    padding: 40px 32px;
+  }
+  footer .wrapper form {
+    margin: 2px 0 0 228px;
+    grid-column: 2/4;
+  }
+  footer .wrapper nav ul {
+    margin: 0 0 24px -23px;
+    gap: 49px;
+  }
+  footer .wrapper .author {
+    margin: 0 0px 6px -84px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+}/*# sourceMappingURL=small.css.map */

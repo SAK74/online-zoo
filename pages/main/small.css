@@ -1,0 +1,140 @@
+@media screen and (max-width: 1000px) {
+  .header .wrapper_header {
+    width: 100%;
+    padding-inline: 30px;
+  }
+  .header .wrapper_header nav span {
+    width: 96px;
+  }
+  .watch-favorite {
+    height: 584px;
+  }
+  .watch-favorite .text {
+    top: 123px;
+    left: 514px;
+    width: 400px;
+    height: 320px;
+    font-size: 85px;
+    line-height: 64px;
+  }
+  .watch-favorite .text::before {
+    top: -51px;
+    left: -60px;
+    width: 367px;
+    height: 367px;
+  }
+  .watch-favorite .btn_1 {
+    top: 482px;
+    left: 567px;
+  }
+  .backstage {
+    margin: 0 0 120px 0px;
+    padding: 0px 30px;
+    background: none;
+    gap: 32px;
+  }
+  .backstage img {
+    width: 455px;
+    height: 408px;
+  }
+  .backstage .text h4 + p {
+    width: 454px;
+  }
+  .pets {
+    margin-top: 67px;
+    height: 1075px;
+    background-image: url("../../assets/images/palm_foto (1).png"), url("../../assets/images/strelitzia 1.png");
+    background-size: 195px, 240px;
+  }
+  .pets .cards-wrapper {
+    width: 940px;
+    height: 800px;
+  }
+  .pets .content .arrow {
+    position: absolute;
+  }
+  .pets .content .arrow:first-child {
+    left: 353px;
+  }
+  .pets .content .arrow:last-child {
+    left: 586px;
+  }
+  .pets .content .cards-container {
+    row-gap: 95px;
+  }
+  .pets .content .cards-container .card .image-container {
+    width: 294px;
+    height: 294px;
+  }
+  .pick-a-ffriend {
+    padding: 30px 30px 50px;
+  }
+  .pick-a-ffriend .content h2 {
+    margin-block: 30px;
+  }
+  .pick-a-ffriend .content .text {
+    padding: 0px 48px 56px;
+  }
+  .pick-a-ffriend .content .text h4 {
+    margin-bottom: 0;
+  }
+  .pick-a-ffriend .content .text h5 {
+    margin-top: 17px;
+  }
+  .pick-a-ffriend .content .text p {
+    width: 100%;
+  }
+  .pick-a-ffriend .content h3 {
+    margin-top: -34px;
+  }
+  .pick-a-ffriend button {
+    margin-top: 128px;
+    margin-bottom: -7px;
+  }
+  .testimonials {
+    height: 842px;
+    background-position: right 604px;
+    background-size: 196px;
+  }
+  .testimonials h3 {
+    margin: 100px auto 29px;
+  }
+  .testimonials .wrapper-container {
+    width: 956px;
+  }
+  .testimonials .container .testimonial {
+    height: 391px;
+  }
+  .testimonials .container .testimonial > * {
+    width: 263px;
+  }
+  .testimonials .progress_wrapper {
+    margin-top: 17px;
+  }
+  .testimonials .progress_wrapper .slider {
+    width: 390px;
+  }
+  .testimonials button {
+    bottom: 140px;
+    left: 30px;
+  }
+  footer .wrapper {
+    padding: 40px 32px;
+  }
+  footer .wrapper form {
+    margin: 2px 0 0 228px;
+    grid-column: 2/4;
+  }
+  footer .wrapper nav ul {
+    margin: 0 0 24px -23px;
+    gap: 49px;
+  }
+  footer .wrapper .author {
+    margin: 0 0px 6px -84px;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+  body {
+    width: 1000px;
+  }
+}/*# sourceMappingURL=small.css.map */
